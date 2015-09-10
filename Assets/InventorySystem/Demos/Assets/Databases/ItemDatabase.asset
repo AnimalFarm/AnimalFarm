@@ -1,0 +1,341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee9c35122abd23458ddb18edd496d6a, type: 3}
+  m_Name: ItemDatabase
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11486866, guid: b907ad83e62665f49bdaf1379d12afdc, type: 2}
+  - {fileID: 11448222, guid: 4623078fead7dfe4aa9a92b36769ed00, type: 2}
+  - {fileID: 11476484, guid: 4f6c5d3910c9f024c8df75227f0ed4f3, type: 2}
+  - {fileID: 11439538, guid: b855851bf49ee9142aa3aa1f57a70a2d, type: 2}
+  - {fileID: 11476484, guid: 2636dbd50111c774d86f79d8a811932e, type: 2}
+  - {fileID: 11492138, guid: 667f05b1ce7d4214bbbdd7bea085122b, type: 2}
+  - {fileID: 11485008, guid: efba3aff56b510d489b60e10f268f9c6, type: 2}
+  - {fileID: 11492682, guid: c59b65aff44e66943a6a5e41ce319d19, type: 2}
+  - {fileID: 11429768, guid: d7fab5330f7396d469a6b502e537a6f7, type: 2}
+  - {fileID: 11476484, guid: b9fc7d477df4a444593665a11edb2424, type: 2}
+  - {fileID: 11412524, guid: 53aa3842e05404e4e92282dd3f989587, type: 2}
+  - {fileID: 11476484, guid: 80a971847ea808d458da04f272ce6162, type: 2}
+  - {fileID: 11476484, guid: ee25c401d3ea2dd4fa40eb6e2383b30c, type: 2}
+  - {fileID: 11476484, guid: 9dea47e0bdc87104eb5f0d2be334e4cc, type: 2}
+  - {fileID: 11476484, guid: 1106285ef161041489249cfe424db8db, type: 2}
+  - {fileID: 11424262, guid: 688d16d0a47bc14498a91380bb12821b, type: 2}
+  - {fileID: 11476484, guid: 4b04307bffe02ca43b86ce630427f14b, type: 2}
+  - {fileID: 11476484, guid: 15b5f6fbcb0bb8c488db504d44797c5d, type: 2}
+  - {fileID: 11488516, guid: 75914db5d3032d14f80de61330ec1ca6, type: 2}
+  - {fileID: 11421546, guid: aa0b91649e2d4a54d8e1504f58565439, type: 2}
+  itemRaritys:
+  - name: 4a756e6b
+    color:
+      r: .544117689
+      g: .544117689
+      b: .544117689
+      a: 1
+    dropObject: {fileID: 0}
+  - name: 4e6f726d616c
+    color:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    dropObject: {fileID: 0}
+  - name: 556e636f6d6d6f6e
+    color:
+      r: .406896591
+      g: 1
+      b: 0
+      a: 1
+    dropObject: {fileID: 0}
+  - name: 52617265
+    color:
+      r: 0
+      g: .751724005
+      b: 1
+      a: 1
+    dropObject: {fileID: 0}
+  - name: 45706963
+    color:
+      r: 1
+      g: .641379297
+      b: 0
+      a: 1
+    dropObject: {fileID: 0}
+  - name: 53757065722065706963
+    color:
+      r: 1
+      g: .785294116
+      b: .463235319
+      a: 1
+    dropObject: {fileID: 0}
+  itemCategories:
+  - name: 4e6f6e65
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  - name: 436c6f7468
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  - name: 506f74696f6e73
+    cooldownTime: 10
+    _onlyAllowTypes: []
+  - name: 466f6f64
+    cooldownTime: 20
+    _onlyAllowTypes: []
+  - name: 53776f726473
+    cooldownTime: 0
+    _onlyAllowTypes: []
+  properties:
+  - ID: 0
+    key: 546573742050726f7065727479
+    value: 
+    showInUI: 1
+    uiColor:
+      r: 1
+      g: 0
+      b: 0
+      a: 1
+  - ID: 1
+    key: 4d7920637573746f6d2070726f7065727479
+    value: 
+    showInUI: 1
+    uiColor:
+      r: 1
+      g: 0
+      b: 0
+      a: 1
+  equipStats:
+  - name: 537472656e677468
+    category: 44656661756c74
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 737472656e677468
+    fieldInfoNameVisual: 45717569707061626c65496e76656e746f72794974656d2e737472656e677468
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 4167696c697479
+    category: 44656661756c74
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 6167696c697479
+    fieldInfoNameVisual: 45717569707061626c65496e76656e746f72794974656d2e6167696c697479
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 446566656e7365
+    category: 44656661756c74
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 646566656e7365
+    fieldInfoNameVisual: 45717569707061626c65496e76656e746f72794974656d2e646566656e7365
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: 44656661756c74
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 5f63617465676f7279
+    fieldInfoNameVisual: 45717569707061626c65496e76656e746f72794974656d2e5f63617465676f7279
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: 44656661756c74
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 5f63617465676f7279
+    fieldInfoNameVisual: 496e76656e746f72794974656d426173652e5f63617465676f7279
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 576569676874
+    category: 47656172
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 5f776569676874
+    fieldInfoNameVisual: 496e76656e746f72794974656d426173652e5f776569676874
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 4974656d206c6576656c
+    category: 47656172
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 5f72657175697265644c6576656c
+    fieldInfoNameVisual: 496e76656e746f72794974656d426173652e5f72657175697265644c6576656c
+    show: 1
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: 44656661756c74
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 5f726172697479
+    fieldInfoNameVisual: 496e76656e746f72794974656d426173652e5f726172697479
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: 44656661756c74
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 5f6275795072696365
+    fieldInfoNameVisual: 496e76656e746f72794974656d426173652e5f6275795072696365
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  - name: 
+    category: 44656661756c74
+    typeName: 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    fieldInfoName: 5f73656c6c5072696365
+    fieldInfoNameVisual: 496e76656e746f72794974656d426173652e5f73656c6c5072696365
+    show: 0
+    formatter: {fileID: 11400822, guid: 4c0d4455efd705242af5824641f01d30, type: 2}
+  equipStatTypes:
+  - 446576646f672e496e76656e746f727953797374656d2e45717569707061626c65496e76656e746f72794974656d2c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+  equipTypes:
+  - ID: 0
+    name: 48656164
+    blockTypes: 
+  - ID: 1
+    name: 4e65636b6c616365
+    blockTypes: 
+  - ID: 2
+    name: 52696e67
+    blockTypes: 
+  - ID: 3
+    name: 426f6f7473
+    blockTypes: 
+  - ID: 4
+    name: 426f6479
+    blockTypes: 
+  - ID: 5
+    name: 536869656c64
+    blockTypes: 060000000800000009000000
+  - ID: 6
+    name: 446167676572
+    blockTypes: 07000000080000000900000005000000
+  - ID: 7
+    name: 31482053776f7264
+    blockTypes: 080000000900000006000000
+  - ID: 8
+    name: 32482053776f7264
+    blockTypes: 06000000070000000900000005000000
+  - ID: 9
+    name: 324820417865
+    blockTypes: 08000000070000000600000005000000
+  - ID: 10
+    name: 476c6f766573
+    blockTypes: 
+  - ID: 11
+    name: 45617272696e67
+    blockTypes: 
+  craftingCategories:
+  - ID: 0
+    name: 426c61636b736d697468696e67
+    description: 
+    alsoScanBankForRequiredItems: 1
+    forceSaveInCollection: {fileID: 0}
+    blueprints:
+    - ID: 1
+      indexInCategory: 0
+      useItemResultNameAndDescription: 1
+      customName: 
+      customDescription: 
+      requiredItems:
+      - item: {fileID: 11476484, guid: 80a971847ea808d458da04f272ce6162, type: 2}
+        amount: 1
+      playerLearnedBlueprint: 1
+      craftCostPrice: 5
+      successChanceFactor: 1
+      itemResult: {fileID: 11439538, guid: b855851bf49ee9142aa3aa1f57a70a2d, type: 2}
+      itemResultCount: 1
+      craftingTimeDuration: 3
+      craftingTimeSpeedupFactor: 1.10000002
+      craftingTimeSpeedupMax: 5
+      blueprintLayouts:
+      - ID: 0
+        enabled: 1
+        rows:
+        - index: 0
+          columns:
+          - index: 0
+            item: {fileID: 0}
+            amount: 0
+          - index: 1
+            item: {fileID: 0}
+            amount: 0
+          - index: 2
+            item: {fileID: 0}
+            amount: 0
+        - index: 1
+          columns:
+          - index: 0
+            item: {fileID: 11476484, guid: 4f6c5d3910c9f024c8df75227f0ed4f3, type: 2}
+            amount: 1
+          - index: 1
+            item: {fileID: 11476484, guid: 4f6c5d3910c9f024c8df75227f0ed4f3, type: 2}
+            amount: 1
+          - index: 2
+            item: {fileID: 11476484, guid: 4f6c5d3910c9f024c8df75227f0ed4f3, type: 2}
+            amount: 1
+        - index: 2
+          columns:
+          - index: 0
+            item: {fileID: 0}
+            amount: 0
+          - index: 1
+            item: {fileID: 0}
+            amount: 0
+          - index: 2
+            item: {fileID: 0}
+            amount: 0
+  - ID: 1
+    name: 436f6f6b696e67
+    description: 
+    alsoScanBankForRequiredItems: 1
+    forceSaveInCollection: {fileID: 0}
+    blueprints:
+    - ID: 2
+      indexInCategory: 0
+      useItemResultNameAndDescription: 1
+      customName: 
+      customDescription: 
+      requiredItems:
+      - item: {fileID: 11485008, guid: efba3aff56b510d489b60e10f268f9c6, type: 2}
+        amount: 1
+      playerLearnedBlueprint: 1
+      craftCostPrice: 10
+      successChanceFactor: .600000024
+      itemResult: {fileID: 11439538, guid: b855851bf49ee9142aa3aa1f57a70a2d, type: 2}
+      itemResultCount: 1
+      craftingTimeDuration: 5
+      craftingTimeSpeedupFactor: 1.10000002
+      craftingTimeSpeedupMax: 5
+      blueprintLayouts:
+      - ID: 0
+        enabled: 1
+        rows:
+        - index: 0
+          columns:
+          - index: 0
+            item: {fileID: 0}
+            amount: 0
+          - index: 1
+            item: {fileID: 0}
+            amount: 0
+          - index: 2
+            item: {fileID: 0}
+            amount: 0
+        - index: 1
+          columns:
+          - index: 0
+            item: {fileID: 11476484, guid: 4f6c5d3910c9f024c8df75227f0ed4f3, type: 2}
+            amount: 1
+          - index: 1
+            item: {fileID: 11476484, guid: 4f6c5d3910c9f024c8df75227f0ed4f3, type: 2}
+            amount: 1
+          - index: 2
+            item: {fileID: 11485008, guid: efba3aff56b510d489b60e10f268f9c6, type: 2}
+            amount: 1
+        - index: 2
+          columns:
+          - index: 0
+            item: {fileID: 0}
+            amount: 0
+          - index: 1
+            item: {fileID: 0}
+            amount: 0
+          - index: 2
+            item: {fileID: 0}
+            amount: 0
