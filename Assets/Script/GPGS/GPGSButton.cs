@@ -6,6 +6,7 @@ public class GPGSButton : MonoBehaviour
     public UILabel Login_Label = null;
     public UILabel User_Label = null;
     public UITexture User_Texture = null;
+    public static string userID = null;
 
     void Awake()
     {
@@ -16,11 +17,10 @@ public class GPGSButton : MonoBehaviour
     {
 	    if(GPGSMng.GetInstance.bLogin == false)
         {
-            Login_Label.text = "Login";
+         
         }
         else
         {
-            Login_Label.text = "Logout";
             SettingUser();
         }
 	}
@@ -30,6 +30,7 @@ public class GPGSButton : MonoBehaviour
         if(GPGSMng.GetInstance.bLogin == false)
         {
             GPGSMng.GetInstance.LoginGPGS(); //노승현, 로그인
+            SettingUser();
             
         }
         else
@@ -47,5 +48,10 @@ public class GPGSButton : MonoBehaviour
 
         User_Label.text = GPGSMng.GetInstance.GetNameGPGS();
         User_Texture.mainTexture = GPGSMng.GetInstance.GetImageGPGS();
+        Login_Label.text = GPGSMng.GetInstance.GetUserIDGPGS();
+
+        userID = GPGSMng.GetInstance.GetUserIDGPGS();
+        Debug.Log(userID);
+        Debug.Log(GPGSMng.GetInstance.GetImageGPGS());
     }
 }

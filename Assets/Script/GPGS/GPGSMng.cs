@@ -42,8 +42,8 @@ public class GPGSMng : Singleton<GPGSMng>
             bLogin = false;
         }
     }
-    //노승현, 자신의 프로필 이미지를 가져온다.
-    public Texture2D GetImageGPGS()
+    //노승현, 자신의 프로필 사진 가져오는 함수.
+    public Texture GetImageGPGS()
     {
         if (Social.localUser.authenticated)
         {
@@ -52,12 +52,24 @@ public class GPGSMng : Singleton<GPGSMng>
         else
             return null;
     }
-    //노승현, 사용자의 이름을 가져옵니다.
+    //노승현, 사용자의 이름 가져오는 함수
     public string GetNameGPGS()
     {
         if(Social.localUser.authenticated)
         {
             return Social.localUser.userName;
+        }
+        else
+        {
+            return null;
+        }
+    }
+    //노승현, 사용자의 아이디 가져오는 함수
+    public string GetUserIDGPGS()
+    {
+        if (Social.localUser.authenticated)
+        {
+            return Social.localUser.id;
         }
         else
         {
