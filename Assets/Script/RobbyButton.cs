@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RobbyButton : MonoBehaviour {
 
-    public GameObject roomMake, roomSearch, shop, guild, friend, character;
+    public GameObject roomMake, roomSearch, shop, guild, profile, character;
     public GameObject coinPlus, jewelPlus, mail, set;
     public GameObject room;
     public GameObject creatRoom, roomBorder, shopMenubor, characterShopUIPanel, setOption, Maliborder;
@@ -60,7 +60,6 @@ public class RobbyButton : MonoBehaviour {
         roomSearch.GetComponent<UIButton>().enabled = false;
         shop.GetComponent<UIButton>().enabled = false;
         guild.GetComponent<UIButton>().enabled = false;
-        friend.GetComponent<UIButton>().enabled = false;
         character.GetComponent<UIButton>().enabled = false;
         coinPlus.GetComponent<UIButton>().enabled = false;
         jewelPlus.GetComponent<UIButton>().enabled = false;
@@ -75,7 +74,7 @@ public class RobbyButton : MonoBehaviour {
         roomSearch.SetActive(false);
         shop.SetActive(false);
         guild.SetActive(false);
-        friend.SetActive(false);
+        profile.SetActive(false);
         character.SetActive(false);
         modeling.SetActive(false);
     }
@@ -85,7 +84,6 @@ public class RobbyButton : MonoBehaviour {
         roomSearch.GetComponent<UIButton>().enabled = true;
         shop.GetComponent<UIButton>().enabled = true;
         guild.GetComponent<UIButton>().enabled = true;
-        friend.GetComponent<UIButton>().enabled = true;
         character.GetComponent<UIButton>().enabled = true;
         coinPlus.GetComponent<UIButton>().enabled = true;
         jewelPlus.GetComponent<UIButton>().enabled = true;
@@ -96,7 +94,7 @@ public class RobbyButton : MonoBehaviour {
         roomSearch.SetActive(true);
         shop.SetActive(true);
         guild.SetActive(true);
-        friend.SetActive(true);
+        profile.SetActive(true);
         character.SetActive(true);
 
         room.SetActive(false);

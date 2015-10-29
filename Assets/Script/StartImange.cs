@@ -6,8 +6,6 @@ public class StartImange : MonoBehaviour {
     private float timer;
     public GameObject backGround;
     public GameObject login;
-    public GameObject faceBook;
-    public GameObject google;
     public GameObject loginBorder;
 
 	void Awake () {
