@@ -26,14 +26,14 @@ PlayerSettings:
   m_MobileMTRendering: 0
   m_Stereoscopic3D: 0
   iosShowActivityIndicatorOnLoading: -1
-  androidShowActivityIndicatorOnLoading: 0
+  androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 1
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
-  allowedAutorotateToPortraitUpsideDown: 1
-  allowedAutorotateToLandscapeRight: 1
-  allowedAutorotateToLandscapeLeft: 1
+  allowedAutorotateToPortraitUpsideDown: 0
+  allowedAutorotateToLandscapeRight: 0
+  allowedAutorotateToLandscapeLeft: 0
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
   disableDepthAndStencilBuffers: 0
@@ -115,6 +115,7 @@ PlayerSettings:
   iPhoneTargetOSVersion: 22
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
+  uIRequiresFullScreen: 1
   uIStatusBarHidden: 1
   uIExitOnSuspend: 0
   uIStatusBarStyle: 0
@@ -149,7 +150,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/Seung/Desktop/AnimalFarm/Assets/Keystore/kr_pcu_nsh.keystore
+  AndroidKeystoreName: D:/project/AnimalFarm/Assets/Keystore/kr_pcu_nsh.keystore
   AndroidKeyaliasName: kr_pcu_nsh
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
@@ -163,8 +164,10 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
-      m_Size: 128
+    - serializedVersion: 2
+      m_Icon: {fileID: 0}
+      m_Width: 128
+      m_Height: 128
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   webPlayerTemplate: APPLICATION:Default
@@ -258,6 +261,10 @@ PlayerSettings:
   ps4pnGameCustomData: 1
   playerPrefsSupport: 0
   ps4ReprojectionSupport: 0
+  ps4UseAudio3dBackend: 0
+  ps4Audio3dVirtualSpeakerCount: 14
+  ps4attribCpuUsage: 0
+  ps4SocialScreenEnabled: 0
   ps4attribUserManagement: 0
   ps4attribMoveSupport: 0
   ps4attrib3DSupport: 0

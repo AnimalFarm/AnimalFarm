@@ -1,0 +1,968 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &113766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 456906}
+  - 114: {fileID: 11499670}
+  m_Layer: 0
+  m_Name: New Atlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &456906
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11499670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 7c56fd24c69644c4aabad26758debe8f, type: 2}
+  mSprites:
+  - name: blueTeam
+    x: 1967
+    y: 113
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: borderIcon
+    x: 1025
+    y: 3151
+    width: 922
+    height: 945
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 51
+    paddingRight: 51
+    paddingTop: 38
+    paddingBottom: 41
+  - name: Character1
+    x: 3634
+    y: 939
+    width: 242
+    height: 396
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 12
+    paddingTop: 59
+    paddingBottom: 57
+  - name: Character2
+    x: 2909
+    y: 896
+    width: 227
+    height: 439
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 10
+    paddingRight: 19
+    paddingTop: 16
+    paddingBottom: 57
+  - name: Character3
+    x: 3137
+    y: 939
+    width: 251
+    height: 396
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 0
+    paddingTop: 59
+    paddingBottom: 57
+  - name: Character4
+    x: 3389
+    y: 941
+    width: 244
+    height: 394
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 12
+    paddingTop: 62
+    paddingBottom: 56
+  - name: characterDownIcon
+    x: 2438
+    y: 1816
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: characterIcon
+    x: 3380
+    y: 2073
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: chattingDownIcon
+    x: 513
+    y: 43
+    width: 496
+    height: 496
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 8
+    paddingBottom: 8
+  - name: chattingIcon
+    x: 1025
+    y: 2587
+    width: 496
+    height: 496
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 8
+    paddingBottom: 8
+  - name: coinIcon
+    x: 1496
+    y: 1649
+    width: 466
+    height: 466
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 23
+    paddingRight: 23
+    paddingTop: 23
+    paddingBottom: 23
+  - name: developer
+    x: 0
+    y: 2507
+    width: 1024
+    height: 576
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: facebookIcon
+    x: 0
+    y: 27
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: facebookIconDown
+    x: 0
+    y: 1053
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: friendDownIcon
+    x: 3380
+    y: 1816
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: friendIcon
+    x: 2909
+    y: 1816
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: goolgeIcon
+    x: 0
+    y: 540
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: guildDownIcon
+    x: 1967
+    y: 1559
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: guildIcon
+    x: 1496
+    y: 594
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: intensifyDownIcon
+    x: 1967
+    y: 354
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: intensifyIcon
+    x: 1967
+    y: 836
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: jewelcon
+    x: 1496
+    y: 1220
+    width: 424
+    height: 428
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 44
+    paddingRight: 44
+    paddingTop: 39
+    paddingBottom: 45
+  - name: kickDownIcon
+    x: 1967
+    y: 1077
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: kickIcon
+    x: 1967
+    y: 1318
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: loginDownIcon
+    x: 2438
+    y: 1097
+    width: 470
+    height: 238
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 10
+    paddingBottom: 8
+  - name: loginIcon
+    x: 3380
+    y: 1336
+    width: 470
+    height: 238
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 10
+    paddingBottom: 8
+  - name: logo
+    x: 1496
+    y: 851
+    width: 425
+    height: 368
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 43
+    paddingRight: 44
+    paddingTop: 50
+    paddingBottom: 51
+  - name: mailBorder
+    x: 2993
+    y: 2330
+    width: 512
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: mailIcon
+    x: 3510
+    y: 2587
+    width: 496
+    height: 496
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 8
+    paddingBottom: 8
+  - name: mailIconDownIcon
+    x: 513
+    y: 556
+    width: 496
+    height: 496
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 8
+    paddingBottom: 8
+  - name: memoIcon
+    x: 0
+    y: 1566
+    width: 928
+    height: 469
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 45
+    paddingRight: 51
+    paddingTop: 26
+    paddingBottom: 26
+  - name: menubarIcon
+    x: 2973
+    y: 3272
+    width: 1013
+    height: 247
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 6
+    paddingRight: 5
+    paddingTop: 0
+    paddingBottom: 9
+  - name: menuborderIcon
+    x: 1967
+    y: 2330
+    width: 512
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: message1
+    x: 2973
+    y: 3200
+    width: 510
+    height: 71
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 98
+    paddingBottom: 87
+  - name: nickName
+    x: 2973
+    y: 3131
+    width: 505
+    height: 68
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 2
+    paddingTop: 26
+    paddingBottom: 34
+  - name: noDownIcon
+    x: 2438
+    y: 858
+    width: 470
+    height: 238
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 10
+    paddingBottom: 8
+  - name: noIcon
+    x: 2438
+    y: 1336
+    width: 470
+    height: 238
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 10
+    paddingBottom: 8
+  - name: noKoreaIcon
+    x: 2909
+    y: 1336
+    width: 470
+    height: 238
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 10
+    paddingBottom: 8
+  - name: out
+    x: 1522
+    y: 2587
+    width: 496
+    height: 496
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 8
+    paddingBottom: 8
+  - name: outIcon
+    x: 1967
+    y: 595
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: plusIcon
+    x: 3013
+    y: 2587
+    width: 496
+    height: 496
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 8
+    paddingBottom: 8
+  - name: plusIconDownIcon
+    x: 2516
+    y: 2587
+    width: 496
+    height: 496
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 8
+    paddingBottom: 8
+  - name: profileBackground
+    x: 1025
+    y: 3118
+    width: 32
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: readyDownIcon
+    x: 2438
+    y: 1575
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: readyIcon
+    x: 2909
+    y: 1575
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: redTeam
+    x: 3380
+    y: 1575
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: robbyBackGround
+    x: 1948
+    y: 3328
+    width: 1024
+    height: 768
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: room
+    x: 0
+    y: 3084
+    width: 1024
+    height: 1012
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 12
+  - name: roomMakeBorder
+    x: 2480
+    y: 2330
+    width: 512
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: roomMakeDownIcon
+    x: 1496
+    y: 80
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: roomMakeIcon
+    x: 1967
+    y: 2073
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: roomSearchDownIcon
+    x: 2438
+    y: 2073
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: roomSearchIcon
+    x: 2909
+    y: 2073
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: setBorder
+    x: 3506
+    y: 2330
+    width: 497
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 15
+    paddingTop: 0
+    paddingBottom: 0
+  - name: setIcon
+    x: 2019
+    y: 2587
+    width: 496
+    height: 496
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 8
+    paddingBottom: 8
+  - name: setIconDownIcon
+    x: 513
+    y: 1069
+    width: 496
+    height: 496
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 8
+    paddingRight: 8
+    paddingTop: 8
+    paddingBottom: 8
+  - name: shopborder
+    x: 0
+    y: 2036
+    width: 982
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopButtonDownIcon
+    x: 1025
+    y: 1174
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopCharacterIcon
+    x: 1025
+    y: 1645
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopCoinDownIcon
+    x: 1025
+    y: 2116
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopCoinIcon
+    x: 1025
+    y: 703
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopDownIcon
+    x: 1496
+    y: 337
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: shopIcon
+    x: 1967
+    y: 1816
+    width: 470
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 0
+    paddingBottom: 0
+  - name: shopJewelDownIcon
+    x: 1025
+    y: 232
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopJewelIcon
+    x: 1496
+    y: 2116
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopMenuBorder
+    x: 1948
+    y: 3087
+    width: 982
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
+  - name: startImage
+    x: 2973
+    y: 3520
+    width: 1024
+    height: 576
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: yesDownIcon
+    x: 2438
+    y: 619
+    width: 470
+    height: 238
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 10
+    paddingBottom: 8
+  - name: yesIcon
+    x: 2438
+    y: 380
+    width: 470
+    height: 238
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 10
+    paddingBottom: 8
+  - name: yesKoreaIcon
+    x: 2438
+    y: 141
+    width: 470
+    height: 238
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 10
+    paddingBottom: 8
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 113766}
+  m_IsPrefabParent: 1
