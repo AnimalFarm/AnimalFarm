@@ -7,6 +7,7 @@ using GooglePlayGames.BasicApi;
 
 public class GPGSMng : Singleton<GPGSMng> 
 {
+
     //노승현, 현재 로그인 중인지 체크
     public bool bLogin 
     {
@@ -43,7 +44,7 @@ public class GPGSMng : Singleton<GPGSMng>
         }
     }
     //노승현, 자신의 프로필 사진 가져오는 함수.
-    public Texture GetImageGPGS()
+    public Texture2D GetImageGPGS()
     {
         if (Social.localUser.authenticated)
         {
