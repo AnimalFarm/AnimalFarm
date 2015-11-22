@@ -1,79 +1,64 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// 노승현, 로비 버튼 이벤트 스크립트
 public class RobbyButton : MonoBehaviour {
 
-    public GameObject roomSearch, shop, profile, character;
-    public GameObject coinPlus, jewelPlus, seting;
-    public GameObject shopMenubor, characterShopUIPanel, setOption, Maliborder;
-    public GameObject modeling;
+    public UIButton ui_gameStart, ui_character, ui_shop; // 하단 버튼 게임시작,캐릭터,상점,랭킹
+    public GameObject optionPopUp, finishPopUp, shopPopUp, characterPopUp, gameStartPopUp; // 각 버튼의 팝업
+    public bool stateCheck = false;
+    public bool popUpCheck = false;
+    int count = 0;
 
-    public bool modelChack;
-	// Use this for initialization
-    void Awake()
-    {
-        modelChack = false;
-	}
-	
-	// Update is called once per fram
-    public void Shop() // 오진수 상점 열기
-    {
-        shopMenubor.SetActive(true);
-        characterShopUIPanel.SetActive(true);
-        StopGameObjectButton();
-    }
-    public void MailButton() // 오진수 우편함 열기
-    {
-        Maliborder.SetActive(true);
-        StopButton();
-    }
-    public void SetOpion() // 오진수 옵션 열기
-    {
-        setOption.SetActive(true);
-        StopButton();
-    }
-    public void ModelOpen() // 오진수 모델 띄움
-    {
-        modelChack = true;
-        StartView();
-    }
-    public void StopButton() // 오진수 GameObject UIbutton만 끄기
-    {
-        roomSearch.GetComponent<UIButton>().enabled = false;
-        shop.GetComponent<UIButton>().enabled = false;
-        character.GetComponent<UIButton>().enabled = false;
-        coinPlus.GetComponent<UIButton>().enabled = false;
-        jewelPlus.GetComponent<UIButton>().enabled = false;
-        modeling.SetActive(false);
-    }
-    public void StopGameObjectButton() // 오진수 RobbyButton GameObject 전부 끄기
-    {
-        roomSearch.SetActive(false);
-        shop.SetActive(false);
-        profile.SetActive(false);
-        character.SetActive(false);
-        modeling.SetActive(false);
-    }
-    public void StartView() // 오진수 처음 시작으로 초기화
-    {
-        roomSearch.GetComponent<UIButton>().enabled = true;
-        shop.GetComponent<UIButton>().enabled = true;
-        character.GetComponent<UIButton>().enabled = true;
-        coinPlus.GetComponent<UIButton>().enabled = true;
-        jewelPlus.GetComponent<UIButton>().enabled = true;
 
-        roomSearch.SetActive(true);
-        shop.SetActive(true);
-        profile.SetActive(true);
-        character.SetActive(true);
+    public void OnOffButton(GameObject g)
+    {
+        count++;
+        stateCheck = !stateCheck;
+        popUpCheck = !popUpCheck;
 
-        Maliborder.SetActive(false);
-        setOption.SetActive(false);
-        shopMenubor.SetActive(false);
-        characterShopUIPanel.SetActive(false);
-        if (modelChack == true) // 오진수 캐릭터가 구입되었을때 출력됨
+        if (stateCheck == true)
         {
-            modeling.SetActive(true);
+            ui_gameStart.enabled = false;
+        }
+        else
+        {
+            ui_gameStart.enabled = true;
+        }
+
+        shopPopUp.SetActive(false);
+        optionPopUp.SetActive(false);
+        finishPopUp.SetActive(false);
+        characterPopUp.SetActive(false);
+        gameStartPopUp.SetActive(false);
+
+        if(count%2 == 0) popUpCheck = true;
+      
+        switch (g.name)
+        {
+            case "Coinplus":
+                shopPopUp.SetActive(popUpCheck);
+                break;
+            case "Gemplus":
+                shopPopUp.SetActive(popUpCheck);
+                break;
+            case "Option":
+                optionPopUp.SetActive(popUpCheck);
+                break;
+            case "Close":
+                finishPopUp.SetActive(popUpCheck);
+                break;
+            case "Shop":
+                shopPopUp.SetActive(popUpCheck);
+                break;
+            case "Character":
+                characterPopUp.SetActive(popUpCheck);
+                break;
+        }
+        if (count % 2 == 0)
+        {
+            popUpCheck = false;
+            count = 0;
         }
     }
 }
