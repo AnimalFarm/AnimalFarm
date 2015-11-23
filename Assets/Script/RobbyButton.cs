@@ -38,7 +38,7 @@ public class RobbyButton : MonoBehaviour
                 finishPopUp.SetActive(true);
             }
         }
-        if (shopPopUp.activeSelf || characterPopUp.activeSelf || gameStartPopUp.activeSelf)
+        if (shopPopUp.activeSelf || characterPopUp.activeSelf)
         {
             ui_gameStart.enabled = false;
             ui_character.enabled = false;
