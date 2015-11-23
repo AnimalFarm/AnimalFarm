@@ -12,6 +12,37 @@ public class RobbyButton : MonoBehaviour
     public bool popUpCheck = false;
     int count = 0;
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (shopPopUp.activeSelf == true)
+            {
+                shopPopUp.SetActive(false);
+            }
+            else if (optionPopUp.activeSelf == true)
+            {
+                optionPopUp.SetActive(false);
+            }
+            else if (finishPopUp.activeSelf == true)
+            {
+                finishPopUp.SetActive(false);
+            }
+            else if (characterPopUp.activeSelf == true)
+            {
+                characterPopUp.SetActive(false);
+            }
+            else if (gameStartPopUp.activeSelf == true)
+            {
+                gameStartPopUp.SetActive(false);
+            }
+            else
+            {
+                finishPopUp.SetActive(true);
+            }
+        }
+    }
+
     public void OnOffButton(GameObject g)
     {
         count++;
@@ -26,7 +57,7 @@ public class RobbyButton : MonoBehaviour
         {
             ui_gameStart.enabled = true;
         }
-
+        
         shopPopUp.SetActive(false);
         optionPopUp.SetActive(false);
         finishPopUp.SetActive(false);
@@ -68,4 +99,15 @@ public class RobbyButton : MonoBehaviour
             count = 0;
         }
     }
+
+    public void OnOffPopUp(GameObject g)
+    {
+        g.SetActive(false);
+    }
+    public void EndGame()
+    {
+        Application.Quit();
+    }
+
+
 }

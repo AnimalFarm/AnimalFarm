@@ -356,7 +356,7 @@ MonoBehaviour:
   updateAnchors: 2
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 898
+  mWidth: 897
   mHeight: 191
   mDepth: 50
   autoResizeBoxCollider: 0
@@ -1891,7 +1891,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1676424613}
+    mMethodName: OnOffPopUp
+    mParameters:
+    - obj: {fileID: 1226611195}
+      field: 
+    oneShot: 0
 --- !u!1 &412282933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,7 +1921,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 412282933}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -42, z: 0}
+  m_LocalPosition: {x: 2, y: -43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2074928016}
@@ -1954,7 +1960,7 @@ MonoBehaviour:
   updateAnchors: 2
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 898
+  mWidth: 897
   mHeight: 602
   mDepth: 52
   autoResizeBoxCollider: 0
@@ -2616,7 +2622,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1676424613}
+    mMethodName: EndGame
+    mParameters: []
+    oneShot: 0
 --- !u!1 &548903125
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,7 +3843,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: .783999979}
   mPivot: 4
-  mWidth: 1193
+  mWidth: 1192
   mHeight: 744
   mDepth: 49
   autoResizeBoxCollider: 0
@@ -6003,7 +6013,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1676424613}
+    mMethodName: OnOffPopUp
+    mParameters:
+    - obj: {fileID: 893740782}
+      field: 
+    oneShot: 0
 --- !u!1 &1095135657
 GameObject:
   m_ObjectHideFlags: 0
@@ -6071,7 +6087,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.08888912
+  aspectRatio: 5.91111088
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -6962,7 +6978,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 13.090909
+  aspectRatio: 10.909091
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -7873,7 +7889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1238594788
 Transform:
   m_ObjectHideFlags: 0
@@ -8322,7 +8338,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1676424613}
+    mMethodName: OnOffPopUp
+    mParameters:
+    - obj: {fileID: 426735337}
+      field: 
+    oneShot: 0
 --- !u!61 &1295686486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10630,7 +10652,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1837490372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 426, y: 274, z: 0}
+  m_LocalPosition: {x: 425, y: 274, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 412282934}
@@ -10737,7 +10759,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1676424613}
+    mMethodName: OnOffPopUp
+    mParameters:
+    - obj: {fileID: 412282933}
+      field: 
+    oneShot: 0
 --- !u!1 &1840256651
 GameObject:
   m_ObjectHideFlags: 0
@@ -11691,7 +11719,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1967561254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1238594788}
@@ -11726,13 +11754,13 @@ MonoBehaviour:
   updateAnchors: 2
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1152
+  mWidth: 870
   mHeight: 720
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.60000002
+  aspectRatio: 1.20833337
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -11761,7 +11789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1972573050
 Transform:
   m_ObjectHideFlags: 0
@@ -11883,8 +11911,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1974896398}
   m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381676, w: .875426054}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -12156,7 +12184,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1676424613}
+    mMethodName: OnOffPopUp
+    mParameters:
+    - obj: {fileID: 672628526}
+      field: 
+    oneShot: 0
 --- !u!1 &2014577387
 GameObject:
   m_ObjectHideFlags: 0
@@ -12575,7 +12609,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 812
+  mWidth: 811
   mHeight: 321
   mDepth: 50
   autoResizeBoxCollider: 0
