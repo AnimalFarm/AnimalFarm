@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 7c56fd24c69644c4aabad26758debe8f, type: 2}
   mSprites:
   - name: Arrow
-    x: 2532
-    y: 2840
+    x: 1967
+    y: 9
     width: 246
     height: 246
     borderLeft: 0
@@ -54,9 +54,22 @@ MonoBehaviour:
     paddingRight: 5
     paddingTop: 5
     paddingBottom: 5
+  - name: attackbutton
+    x: 513
+    y: 1282
+    width: 506
+    height: 506
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 3
+    paddingBottom: 3
   - name: BarEdge
     x: 0
-    y: 2302
+    y: 763
     width: 512
     height: 512
     borderLeft: 0
@@ -68,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Character1
-    x: 1724
-    y: 1091
+    x: 2438
+    y: 555
     width: 242
     height: 396
     borderLeft: 0
@@ -81,8 +94,8 @@ MonoBehaviour:
     paddingTop: 59
     paddingBottom: 57
   - name: Character2
-    x: 1496
-    y: 1048
+    x: 3801
+    y: 2144
     width: 227
     height: 439
     borderLeft: 0
@@ -94,8 +107,8 @@ MonoBehaviour:
     paddingTop: 16
     paddingBottom: 57
   - name: Character3
-    x: 1496
-    y: 651
+    x: 2438
+    y: 1347
     width: 251
     height: 396
     borderLeft: 0
@@ -107,8 +120,8 @@ MonoBehaviour:
     paddingTop: 59
     paddingBottom: 57
   - name: Character4
-    x: 1496
-    y: 256
+    x: 2438
+    y: 952
     width: 244
     height: 394
     borderLeft: 0
@@ -120,8 +133,8 @@ MonoBehaviour:
     paddingTop: 62
     paddingBottom: 56
   - name: CharacterButton
-    x: 2435
-    y: 2574
+    x: 1967
+    y: 1230
     width: 470
     height: 256
     borderLeft: 0
@@ -134,7 +147,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: CharacterButtonIcon
     x: 0
-    y: 1789
+    y: 2302
     width: 512
     height: 512
     borderLeft: 0
@@ -146,8 +159,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: CharacterDownButtonIcon
-    x: 1025
-    y: 2360
+    x: 1496
+    y: 700
     width: 470
     height: 470
     borderLeft: 0
@@ -159,8 +172,8 @@ MonoBehaviour:
     paddingTop: 21
     paddingBottom: 21
   - name: characterIcon
-    x: 513
-    y: 9
+    x: 1967
+    y: 973
     width: 470
     height: 256
     borderLeft: 0
@@ -185,8 +198,8 @@ MonoBehaviour:
     paddingTop: 26
     paddingBottom: 26
   - name: CharacterUpButtonIcon
-    x: 3473
-    y: 2857
+    x: 1496
+    y: 229
     width: 470
     height: 470
     borderLeft: 0
@@ -198,7 +211,7 @@ MonoBehaviour:
     paddingTop: 21
     paddingBottom: 21
   - name: chattingIcon
-    x: 1025
+    x: 3515
     y: 2831
     width: 496
     height: 496
@@ -224,8 +237,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: CoinDownButtonIcon
-    x: 1025
-    y: 1889
+    x: 2438
+    y: 2113
     width: 470
     height: 470
     borderLeft: 0
@@ -237,8 +250,8 @@ MonoBehaviour:
     paddingTop: 21
     paddingBottom: 21
   - name: coinIcon
-    x: 1025
-    y: 480
+    x: 2909
+    y: 2117
     width: 466
     height: 466
     borderLeft: 0
@@ -250,8 +263,8 @@ MonoBehaviour:
     paddingTop: 23
     paddingBottom: 23
   - name: CoinUpButtonIcon
-    x: 1025
-    y: 1418
+    x: 1496
+    y: 2113
     width: 470
     height: 470
     borderLeft: 0
@@ -276,8 +289,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: GemDownButtonIcon
-    x: 3002
-    y: 2857
+    x: 1496
+    y: 1642
     width: 470
     height: 470
     borderLeft: 0
@@ -289,8 +302,8 @@ MonoBehaviour:
     paddingTop: 21
     paddingBottom: 21
   - name: GemUpButtonIcon
-    x: 1025
-    y: 947
+    x: 1967
+    y: 2113
     width: 470
     height: 470
     borderLeft: 0
@@ -301,9 +314,61 @@ MonoBehaviour:
     paddingRight: 21
     paddingTop: 21
     paddingBottom: 21
-  - name: jewelcon
+  - name: glossy_lightgray_button_Vector_Clipart
+    x: 513
+    y: 769
+    width: 506
+    height: 506
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 3
+    paddingBottom: 3
+  - name: HP_Bar
+    x: 1154
+    y: 3493
+    width: 109
+    height: 26
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HP_green
     x: 1025
-    y: 51
+    y: 3364
+    width: 109
+    height: 26
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HP_Redr
+    x: 1025
+    y: 3337
+    width: 109
+    height: 26
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: jewelcon
+    x: 3376
+    y: 2155
     width: 424
     height: 428
     borderLeft: 0
@@ -314,33 +379,20 @@ MonoBehaviour:
     paddingRight: 44
     paddingTop: 39
     paddingBottom: 45
+  - name: joystick
+    x: 513
+    y: 1795
+    width: 506
+    height: 506
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 3
+    paddingBottom: 3
   - name: loginButton
-    x: 2438
-    y: 2221
-    width: 470
-    height: 240
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 21
-    paddingRight: 21
-    paddingTop: 8
-    paddingBottom: 8
-  - name: logo
-    x: 1496
-    y: 2462
-    width: 425
-    height: 368
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 43
-    paddingRight: 44
-    paddingTop: 50
-    paddingBottom: 51
-  - name: MailButton
     x: 0
     y: 9
     width: 470
@@ -353,9 +405,35 @@ MonoBehaviour:
     paddingRight: 21
     paddingTop: 8
     paddingBottom: 8
+  - name: logo
+    x: 1967
+    y: 1744
+    width: 425
+    height: 368
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 43
+    paddingRight: 44
+    paddingTop: 50
+    paddingBottom: 51
+  - name: MailButton
+    x: 2479
+    y: 2584
+    width: 470
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 8
+    paddingBottom: 8
   - name: mailIcon
-    x: 513
-    y: 1292
+    x: 3018
+    y: 2831
     width: 496
     height: 496
     borderLeft: 0
@@ -367,8 +445,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 8
   - name: MailList
-    x: 2019
-    y: 2833
+    x: 2906
+    y: 1859
     width: 512
     height: 253
     borderLeft: 0
@@ -393,8 +471,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 9
   - name: menuborderIcon
-    x: 1922
-    y: 2574
+    x: 2393
+    y: 1856
     width: 512
     height: 256
     borderLeft: 0
@@ -407,7 +485,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Money
     x: 0
-    y: 250
+    y: 1789
     width: 512
     height: 512
     borderLeft: 0
@@ -419,8 +497,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: NoButton5
-    x: 1496
-    y: 1966
+    x: 1967
+    y: 734
     width: 470
     height: 238
     borderLeft: 0
@@ -433,7 +511,7 @@ MonoBehaviour:
     paddingBottom: 8
   - name: OIcon
     x: 513
-    y: 2312
+    y: 260
     width: 502
     height: 502
     borderLeft: 0
@@ -445,8 +523,8 @@ MonoBehaviour:
     paddingTop: 5
     paddingBottom: 5
   - name: OkButton5
-    x: 1496
-    y: 1727
+    x: 1967
+    y: 256
     width: 470
     height: 238
     borderLeft: 0
@@ -458,8 +536,8 @@ MonoBehaviour:
     paddingTop: 10
     paddingBottom: 8
   - name: OpstionButton
-    x: 1967
-    y: 2221
+    x: 3421
+    y: 2584
     width: 470
     height: 240
     borderLeft: 0
@@ -471,7 +549,7 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 8
   - name: out
-    x: 1522
+    x: 2521
     y: 2831
     width: 496
     height: 496
@@ -484,8 +562,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 8
   - name: plusIcon
-    x: 513
-    y: 266
+    x: 2024
+    y: 2831
     width: 496
     height: 496
     borderLeft: 0
@@ -498,7 +576,7 @@ MonoBehaviour:
     paddingBottom: 8
   - name: Profile
     x: 0
-    y: 763
+    y: 250
     width: 512
     height: 512
     borderLeft: 0
@@ -510,8 +588,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: profileBackground
-    x: 1025
-    y: 3358
+    x: 1154
+    y: 3460
     width: 32
     height: 32
     borderLeft: 0
@@ -522,9 +600,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: ProfileBorder
+    x: 513
+    y: 2302
+    width: 511
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
   - name: RankButton
-    x: 3377
-    y: 2574
+    x: 1967
+    y: 1487
     width: 470
     height: 256
     borderLeft: 0
@@ -536,8 +627,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: RankingButton
-    x: 2909
-    y: 2221
+    x: 2008
+    y: 2584
     width: 470
     height: 240
     borderLeft: 0
@@ -562,8 +653,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: setIcon
-    x: 513
-    y: 779
+    x: 1527
+    y: 2831
     width: 496
     height: 496
     borderLeft: 0
@@ -588,8 +679,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ShopButton
-    x: 2906
-    y: 2574
+    x: 3419
+    y: 1856
     width: 470
     height: 256
     borderLeft: 0
@@ -600,9 +691,87 @@ MonoBehaviour:
     paddingRight: 21
     paddingTop: 0
     paddingBottom: 0
+  - name: shopButtonDownIcon
+    x: 1025
+    y: 229
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopCharacterIcon
+    x: 1025
+    y: 1171
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopCoinDownIcon
+    x: 1025
+    y: 700
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopCoinIcon
+    x: 1025
+    y: 1642
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopJewelDownIcon
+    x: 1025
+    y: 2113
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
+  - name: shopJewelIcon
+    x: 1496
+    y: 1171
+    width: 470
+    height: 470
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 21
+    paddingTop: 21
+    paddingBottom: 21
   - name: ShopMenuBorder
-    x: 2019
-    y: 3087
+    x: 1025
+    y: 2584
     width: 982
     height: 240
     borderLeft: 0
@@ -614,8 +783,8 @@ MonoBehaviour:
     paddingTop: 8
     paddingBottom: 8
   - name: StartButton
-    x: 1496
-    y: 2205
+    x: 513
+    y: 3
     width: 470
     height: 256
     borderLeft: 0
@@ -627,8 +796,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: StartGameName
-    x: 3380
-    y: 2221
+    x: 2950
+    y: 2584
     width: 470
     height: 240
     borderLeft: 0
@@ -666,8 +835,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: XIcon
-    x: 513
-    y: 1799
+    x: 1025
+    y: 2825
     width: 501
     height: 502
     borderLeft: 0
@@ -679,8 +848,8 @@ MonoBehaviour:
     paddingTop: 5
     paddingBottom: 5
   - name: YesButton5
-    x: 1496
-    y: 1488
+    x: 1967
+    y: 495
     width: 470
     height: 238
     borderLeft: 0
@@ -701,7 +870,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: mSprites.Array.data[26].height
+      value: 675
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 113766}
