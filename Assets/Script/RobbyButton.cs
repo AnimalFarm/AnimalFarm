@@ -4,54 +4,61 @@ using System.Collections;
 // 노승현, 로비 버튼 이벤트 스크립트
 public class RobbyButton : MonoBehaviour
 {
-
+    public UIPanel lobbyPanel; // 로비 패널
     public UIButton ui_gameStart, ui_character, ui_shop; // 하단 버튼 게임시작,캐릭터,상점,랭킹
     public GameObject optionPopUp, finishPopUp, shopPopUp, characterPopUp, gameStartPopUp; // 각 버튼의 팝업
     public UIToggle shop_Character, shop_Gem, shop_Coin; // 상점을 열면 우선 보여주는 화면
 
-    void Update()
+
+    public IEnumerator SetButton()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        while(true)
         {
-            if (shopPopUp.activeSelf)
+            if (!lobbyPanel.isActiveAndEnabled)
+            yield break;
+
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                shopPopUp.SetActive(false);
+                if (shopPopUp.activeSelf)
+                {
+                    shopPopUp.SetActive(false);
+                }
+                else if (optionPopUp.activeSelf)
+                {
+                    optionPopUp.SetActive(false);
+                }
+                else if (finishPopUp.activeSelf)
+                {
+                    finishPopUp.SetActive(false);
+                }
+                else if (characterPopUp.activeSelf)
+                {
+                    characterPopUp.SetActive(false);
+                }
+                else if (gameStartPopUp.activeSelf)
+                {
+                    gameStartPopUp.SetActive(false);
+                }
+                else
+                {
+                    finishPopUp.SetActive(true);
+                }
             }
-            else if (optionPopUp.activeSelf)
+            if (shopPopUp.activeSelf || characterPopUp.activeSelf)
             {
-                optionPopUp.SetActive(false);
-            }
-            else if (finishPopUp.activeSelf)
-            {
-                finishPopUp.SetActive(false);
-            }
-            else if (characterPopUp.activeSelf)
-            {
-                characterPopUp.SetActive(false);
-            }
-            else if (gameStartPopUp.activeSelf)
-            {
-                gameStartPopUp.SetActive(false);
+                ui_gameStart.enabled = false;
+                ui_character.enabled = false;
+                ui_shop.enabled = false;
             }
             else
             {
-                finishPopUp.SetActive(true);
+                ui_gameStart.enabled = true;
+                ui_character.enabled = true;
+                ui_shop.enabled = true;
             }
-        }
-        if (shopPopUp.activeSelf || characterPopUp.activeSelf)
-        {
-            ui_gameStart.enabled = false;
-            ui_character.enabled = false;
-            ui_shop.enabled = false;
-        }
-        else
-        {
-            ui_gameStart.enabled = true;
-            ui_character.enabled = true;
-            ui_shop.enabled = true;
+            yield return null;
         }
     }
-
     public void OnOffButton(GameObject g)
     {        
         shopPopUp.SetActive(false);
@@ -96,5 +103,9 @@ public class RobbyButton : MonoBehaviour
     public void EndGame()
     {
         Application.Quit();
+    }
+    void OnApplicationQuit()
+    {
+        GPGSMng.GetInstance.LogoutGPGS(); //노승현, 로그아웃
     }
 }

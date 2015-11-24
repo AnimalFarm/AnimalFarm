@@ -1,21 +1,40 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// 노승현 코루틴 함수로 변경
+
 public class GPGSButton : MonoBehaviour 
 {
     public GameObject robbyPanel, loadingPanel;
+    public UITexture user_Photo = null;
+    public UILabel userName = null;
+    public string userID = null;
+    public RobbyButton startButton;
 
     void Awake()
     {
         GPGSMng.GetInstance.InitGPGS(); //노승현, 초기화
-
+        StartCoroutine(SetPanel());
 	}
-    void Update()
+    IEnumerator SetPanel()
     {
-        if (Social.localUser.authenticated)
+        while(true)
         {
-            robbyPanel.SetActive(true);
-            loadingPanel.SetActive(false);
+            if (Social.localUser.authenticated)
+            {
+                robbyPanel.SetActive(true);
+                loadingPanel.SetActive(false);
+                StartCoroutine(startButton.SetButton());
+
+                if (GPGSMng.GetInstance.GetImageGPGS() != null)
+                {
+                    user_Photo.mainTexture = GPGSMng.GetInstance.GetImageGPGS();
+                }
+                userName.text = GPGSMng.GetInstance.GetNameGPGS();
+                userID = GPGSMng.GetInstance.GetUserIDGPGS();
+                yield break;
+            }
+            yield return null;
         }
     }
     public void ClickEvent()
