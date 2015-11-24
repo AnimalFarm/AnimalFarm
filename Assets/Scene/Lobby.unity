@@ -8955,9 +8955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad78dbc01b85c043a64a6290c917592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  user_Photo: {fileID: 0}
-  userName: {fileID: 1104881416}
-  userID: 
 --- !u!4 &1364571968
 Transform:
   m_ObjectHideFlags: 0
@@ -10436,7 +10433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db790fcf0fc8aba40ac240cd44e0ed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lobbyPanel: {fileID: 0}
+  lobbyPanel: {fileID: 1972573051}
   ui_gameStart: {fileID: 694827731}
   ui_character: {fileID: 491494412}
   ui_shop: {fileID: 1160478273}
@@ -10555,7 +10552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3eeecb1f0f5bb44badea72032f7724f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robbyPanel: {fileID: 1972573049}
+  lobbyPanel: {fileID: 1972573049}
   loadingPanel: {fileID: 1238594787}
   user_Photo: {fileID: 1662362158}
   userName: {fileID: 1104881416}
@@ -12472,7 +12469,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1967561254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1238594788}
@@ -12507,13 +12504,13 @@ MonoBehaviour:
   updateAnchors: 2
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1152
+  mWidth: 2043
   mHeight: 720
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.60000002
+  aspectRatio: 2.8375001
   mType: 0
   mFillDirection: 4
   mFillAmount: 1

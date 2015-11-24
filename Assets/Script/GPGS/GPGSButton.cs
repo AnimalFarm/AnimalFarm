@@ -5,11 +5,11 @@ using System.Collections;
 
 public class GPGSButton : MonoBehaviour 
 {
-    public GameObject robbyPanel, loadingPanel;
+    public GameObject lobbyPanel, loadingPanel;
     public UITexture user_Photo = null;
     public UILabel userName = null;
     public string userID = null;
-    public RobbyButton startButton;
+    public LobbyButton startButton;
 
     void Awake()
     {
@@ -22,7 +22,7 @@ public class GPGSButton : MonoBehaviour
         {
             if (Social.localUser.authenticated)
             {
-                robbyPanel.SetActive(true);
+                lobbyPanel.SetActive(true);
                 loadingPanel.SetActive(false);
                 StartCoroutine(startButton.SetButton());
 

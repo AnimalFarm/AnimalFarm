@@ -2,7 +2,7 @@
 using System.Collections;
 
 // 노승현, 로비 버튼 이벤트 스크립트
-public class RobbyButton : MonoBehaviour
+public class LobbyButton : MonoBehaviour
 {
     public UIPanel lobbyPanel; // 로비 패널
     public UIButton ui_gameStart, ui_character, ui_shop; // 하단 버튼 게임시작,캐릭터,상점,랭킹
