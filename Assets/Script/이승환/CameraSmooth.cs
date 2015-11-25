@@ -13,7 +13,7 @@ public class CameraSmooth : MonoBehaviour
     {
         _iniPos = transform.position;
         UIRoot root = gameObject.GetComponent<UIRoot>();
-       // root.automatic = true;        // 자동 조절되게 하고.
+     //   root.automatic = true;        // 자동 조절되게 하고.
 
         root.manualHeight = 480;
         root.minimumHeight = 480;

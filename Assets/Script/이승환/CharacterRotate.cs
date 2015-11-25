@@ -8,9 +8,10 @@ public class CharacterRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (stick.position.x > stick.radius - 4 || stick.position.x < -stick.radius + 4 || stick.position.y > stick.radius - 4 || stick.position.y < -stick.radius + 4)
+        if (stick.position.x > stick.radius - 20 || stick.position.x < -stick.radius + 20 || stick.position.y > stick.radius - 20 || stick.position.y < -stick.radius + 20)
         {
-            transform.forward = (new Vector3(-1 * stick.position.x * Time.deltaTime * 1f, 0, -1 * stick.position.y * Time.deltaTime * 1f));
+            transform.forward = (new Vector3((stick.position.x * Time.deltaTime)/2, 0f,(stick.position.y * Time.deltaTime)/2));
+            //transform.Rotate(stick.position.x * Time.deltaTime * 1f, 0f, stick.position.y * Time.deltaTime * 1f);
         }
     }
 }
