@@ -13,10 +13,10 @@ public class LobbyButton : MonoBehaviour
 
     public IEnumerator SetButton()
     {
-        while(true)
+        while (true)
         {
             if (!lobbyPanel.isActiveAndEnabled)
-            yield break;
+                yield break;
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -61,7 +61,7 @@ public class LobbyButton : MonoBehaviour
         }
     }
     public void OnOffButton(GameObject g)
-    {        
+    {
         shopPopUp.SetActive(false);
         optionPopUp.SetActive(false);
         finishPopUp.SetActive(false);
@@ -72,17 +72,17 @@ public class LobbyButton : MonoBehaviour
         {
             case "Coinplus":
                 shopPopUp.SetActive(true);
-                ui_ShopPanel.SetDragAmount(0,0,false);
+                ui_ShopPanel.SetDragAmount(0, 0, false);
                 shop_Coin.value = true;
                 break;
             case "Gemplus":
                 shopPopUp.SetActive(true);
-                ui_ShopPanel.SetDragAmount(0,0,false);
+                ui_ShopPanel.SetDragAmount(0, 0, false);
                 shop_Gem.value = true;
                 break;
             case "Shop":
                 shopPopUp.SetActive(true);
-                ui_ShopPanel.SetDragAmount(0,0,false);
+                ui_ShopPanel.SetDragAmount(0, 0, false);
                 shop_Character.value = true;
                 break;
             case "Option":
@@ -106,7 +106,7 @@ public class LobbyButton : MonoBehaviour
     }
     public void SetToggle()
     {
-        ui_ShopPanel.SetDragAmount(0,0,false);
+        ui_ShopPanel.SetDragAmount(0, 0, false);
     }
     public void EndGame()
     {

@@ -32,7 +32,7 @@ public class TitleScreen : MonoBehaviour
             }
             if (timer >= 4 && timer < 6) //  로그인 배경 알파값 증가 , 이미지 체인지
             {
-                bg.spriteName = "startImage";
+                bg.spriteName = "StartImage";
                 bg.color = new Color(1f, 1f, 1f, (timer - 4) * 0.5f);
             }
             if (timer >= 6 && timer < 7) // 로그인 버튼 나옴
