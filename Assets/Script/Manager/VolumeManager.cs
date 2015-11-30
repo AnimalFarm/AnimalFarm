@@ -5,16 +5,19 @@ using System.Collections;
 
 public class VolumeManager : MonoBehaviour {
 
-    public AudioSource volumeControl;
+    public AudioSource volumeControl; // 로비 배경음
+    public AudioSource loginSound; // 로그인 사운드
+    public UIPanel lobbyPanel, loadingPlanel; // 로비패널
     public UISlider bgSoundBar;
     public UILabel bgSizeFont;
     public bool soundCheck = true;
 	
-	void Awake () 
+    void Update()
     {
-        volumeControl.volume = 1.0f;
-	}
-    
+        if (!loadingPlanel.isActiveAndEnabled) loginSound.enabled = false;
+        if(lobbyPanel.isActiveAndEnabled && soundCheck) volumeControl.enabled = true;
+        else volumeControl.enabled = false;
+    }
     public void BGsoundSize() // 사운드 소리 크기
     {
         int size = (int)(bgSoundBar.value * 100);
@@ -26,13 +29,13 @@ public class VolumeManager : MonoBehaviour {
     public void SoundOnOff()
     {
         soundCheck = !soundCheck;
-        if (soundCheck == true)
+        if (soundCheck)
         {
             volumeControl.volume = bgSoundBar.value;
         }
         else
         {
-            volumeControl.volume = 0;
+            volumeControl.enabled = false;
         }
     }
 
