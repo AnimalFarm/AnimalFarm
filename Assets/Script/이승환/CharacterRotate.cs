@@ -8,10 +8,10 @@ public class CharacterRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //조이스틱범위가 20 이상이면 움직임 현재 40
         if (stick.position.x > stick.radius - 20 || stick.position.x < -stick.radius + 20 || stick.position.y > stick.radius - 20 || stick.position.y < -stick.radius + 20)
         {
             transform.forward = (new Vector3((stick.position.x * Time.deltaTime)/2, 0f,(stick.position.y * Time.deltaTime)/2));
-            //transform.Rotate(stick.position.x * Time.deltaTime * 1f, 0f, stick.position.y * Time.deltaTime * 1f);
         }
     }
 }

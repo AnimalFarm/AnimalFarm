@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-//이승환//Sphere collider 충돌채크 해서Enemymove로 전달
+//이승환//Sphere collider 충돌채크 해서Enemymove로 전달, Sphere collider에 Is Trigger 채크돼있어야함
 public class EnemyCheking : MonoBehaviour {
 
     public GameObject Enemy;    //Enemy 오브잭트

@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 //이승환//EnemyCheking에서 Player위치 값을 받아와서 몬스터 이동
-public class Eenemymove : MonoBehaviour {
-    
+public class Eenemymove : MonoBehaviour
+{
+
     public CharacterController cc;  //Enemy의 컨트롤러를 받아 이동
     public Animation any;           //Enemy의 에니메이션
     public float speed;             //Enemy의 스피드
@@ -14,14 +15,19 @@ public class Eenemymove : MonoBehaviour {
     Vector3 v2;                     //Enemy를 오브젝터의 축
     Quaternion dir;                 //Enemy가 보는방향
 
-    public bool attackOn = false, moveOn =false;// 어택과 무브 온오프
+    public Animator animator;
+
+    public bool attackOn = false, moveOn = false;// 어택과 무브 온오프
 
     void Update()
     {
-        if(attackOn)//이승환//어택 에니매이션 실행 함수
+        if (attackOn)//이승환//어택 에니매이션 실행 함수
         {
             distancedir = Vector3.Distance(Vdir, transform.position);
-            any.CrossFade("1_attack", 0.25f);
+            animator.SetBool("bAttack_01", true);
+            animator.SetBool("bWalk", false);
+            animator.SetBool("bRun", false);
+            // any.CrossFade("1_attack", 0.25f);
             if (distancedir > 1f)//이승환//거리가 멀어지면 이동
             {
                 attackOn = false;
@@ -36,17 +42,24 @@ public class Eenemymove : MonoBehaviour {
 
             if (distancedir > 3f)//이승환//멀어지면 빨라짐
             {
-                any.CrossFade("2_run", 0.25f);
-                speed = 6.0f;
+                animator.SetBool("bRun", true);
+                animator.SetBool("bWalk", false);
+                animator.SetBool("bAttack_01", false);
+                // any.CrossFade("2_run", 0.25f);
+                speed = 2f; 
             }
-            else if (distancedir > 1.5f)//이승환//가까운 속도
+            else if (distancedir >0.85f)//이승환//가까운 속도
             {
-                any.CrossFade("2_run", 0.25f);
-                speed = 2.0f;
+                animator.SetBool("bWalk", true);
+                animator.SetBool("bRun", false);
+                animator.SetBool("bAttack_01", false);
+                // any.CrossFade("2_run", 0.25f);
+                if (speed < 0.13f)
+                speed = 1f; 
             }
             else//이승환//위의 조건보다 작으면 공격하고 if문을 나가서 이동을 못하게한다
             {
-                if(moveOn)
+                if (moveOn)
                     moveOn = false;
 
                 attackOn = true;
@@ -65,7 +78,10 @@ public class Eenemymove : MonoBehaviour {
         }
         else//이승환//정지 에니메이션
         {
-            any.CrossFade("0_idle", 0.25f);
+            animator.SetBool("bRun", false);
+            animator.SetBool("bWalk", false);
+            animator.SetBool("bAttack_01", false);
+            // any.CrossFade("0_idle", 0.25f);
             moveOn = false;
             attackOn = false;
         }
