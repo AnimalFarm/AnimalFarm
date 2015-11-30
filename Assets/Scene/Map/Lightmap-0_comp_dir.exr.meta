@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 15f42d4d1c7d649d5a7d8970f0c6d1a2
-timeCreated: 1433588489
-licenseType: Store
+guid: 4935a13aa736da241bf99f79e8352c49
+timeCreated: 1448882052
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
-    linearTexture: 0
+    linearTexture: 1
     correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
@@ -34,9 +34,10 @@ TextureImporter:
     mipBias: 0
     wrapMode: 1
   nPOTScale: 1
-  lightmap: 1
-  rGBM: 0
+  lightmap: 0
+  rGBM: 2
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
@@ -45,7 +46,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 0
-  textureType: 6
+  textureType: 0
   buildTargetSettings: []
   spriteSheet:
     sprites: []

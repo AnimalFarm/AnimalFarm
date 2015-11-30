@@ -1,18 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+//타이머 스크립트
 public class Timer : MonoBehaviour {
-
-
-    private float _timerForText;
-    private int _secText;
-    private int _minText;
-    public UILabel time;
+    private float _timerForText;    //이승환//진행시간 저장
+    private int _secText;           //이승환//초
+    private int _minText;           //이승환//분
+    public UILabel time;            //이승환//시간을 표시해줄 UI라밸
 
 	// Use this for initialization
     void Awake()
     {
-
         time = gameObject.GetComponent<UILabel>();
 	}
 	
