@@ -694,6 +694,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 83152342}
   - 114: {fileID: 83152343}
+  - 114: {fileID: 83152345}
+  - 61: {fileID: 83152344}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -748,7 +750,7 @@ MonoBehaviour:
   mWidth: 190
   mHeight: 60
   mDepth: 164
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.16666675
@@ -765,6 +767,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &83152344
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 83152341}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 190, y: 60}
+--- !u!114 &83152345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 83152341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 83152341}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &87836793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,8 +1504,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 173724403}
   - 114: {fileID: 173724406}
-  - 61: {fileID: 173724405}
-  - 114: {fileID: 173724404}
   m_Layer: 8
   m_Name: MoneyIcon
   m_TagString: Untagged
@@ -1485,35 +1523,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 83152342}
   m_RootOrder: 0
---- !u!114 &173724404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 173724402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 173724402}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &173724405
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 173724402}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 51, y: 60}
 --- !u!114 &173724406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,8 +2293,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 230378056}
   - 114: {fileID: 230378059}
-  - 61: {fileID: 230378058}
-  - 114: {fileID: 230378057}
   m_Layer: 8
   m_Name: CoinIcon
   m_TagString: Untagged
@@ -2305,35 +2312,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1158825545}
   m_RootOrder: 0
---- !u!114 &230378057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230378055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 230378055}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &230378058
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 230378055}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 50, y: 60}
 --- !u!114 &230378059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3700,6 +3678,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 339552131}
   - 114: {fileID: 339552132}
+  - 114: {fileID: 339552134}
+  - 61: {fileID: 339552133}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -3754,7 +3734,7 @@ MonoBehaviour:
   mWidth: 189
   mHeight: 60
   mDepth: 180
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1500001
@@ -3771,6 +3751,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &339552133
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339552130}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 189, y: 60}
+--- !u!114 &339552134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339552130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 339552130}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &339897687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4548,6 +4566,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 424774204}
   - 114: {fileID: 424774205}
+  - 114: {fileID: 424774207}
+  - 61: {fileID: 424774206}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -4602,7 +4622,7 @@ MonoBehaviour:
   mWidth: 190
   mHeight: 60
   mDepth: 196
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.16666675
@@ -4619,6 +4639,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &424774206
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 424774203}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 190, y: 60}
+--- !u!114 &424774207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 424774203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 424774203}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &426735337
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,6 +4771,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 434815847}
   - 114: {fileID: 434815848}
+  - 114: {fileID: 434815850}
+  - 61: {fileID: 434815849}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -4767,7 +4827,7 @@ MonoBehaviour:
   mWidth: 189
   mHeight: 60
   mDepth: 102
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1500001
@@ -4784,6 +4844,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &434815849
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434815846}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 189, y: 60}
+--- !u!114 &434815850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434815846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 434815846}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &467161492
 GameObject:
   m_ObjectHideFlags: 0
@@ -4793,6 +4891,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 467161493}
   - 114: {fileID: 467161494}
+  - 114: {fileID: 467161496}
+  - 61: {fileID: 467161495}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -4847,7 +4947,7 @@ MonoBehaviour:
   mWidth: 189
   mHeight: 60
   mDepth: 188
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1500001
@@ -4864,6 +4964,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &467161495
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 467161492}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 189, y: 60}
+--- !u!114 &467161496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 467161492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 467161492}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &488669571
 GameObject:
   m_ObjectHideFlags: 0
@@ -5284,8 +5422,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 517099672}
   - 114: {fileID: 517099675}
-  - 61: {fileID: 517099674}
-  - 114: {fileID: 517099673}
   m_Layer: 8
   m_Name: GemIcon
   m_TagString: Untagged
@@ -5305,35 +5441,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2106212606}
   m_RootOrder: 0
---- !u!114 &517099673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 517099671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 517099671}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &517099674
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 517099671}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 50, y: 60}
 --- !u!114 &517099675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6318,8 +6425,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 650218794}
   - 114: {fileID: 650218797}
-  - 61: {fileID: 650218796}
-  - 114: {fileID: 650218795}
   m_Layer: 8
   m_Name: GemIcon
   m_TagString: Untagged
@@ -6339,35 +6444,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 424774204}
   m_RootOrder: 0
---- !u!114 &650218795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 650218793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 650218793}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &650218796
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 650218793}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 50, y: 60}
 --- !u!114 &650218797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6878,8 +6954,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 683501026}
   - 114: {fileID: 683501029}
-  - 61: {fileID: 683501028}
-  - 114: {fileID: 683501027}
   m_Layer: 8
   m_Name: CoinIcon
   m_TagString: Untagged
@@ -6899,35 +6973,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1809442111}
   m_RootOrder: 0
---- !u!114 &683501027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 683501025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 683501025}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &683501028
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 683501025}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 50, y: 60}
 --- !u!114 &683501029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7687,6 +7732,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 706464704}
   - 114: {fileID: 706464705}
+  - 114: {fileID: 706464707}
+  - 61: {fileID: 706464706}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -7741,7 +7788,7 @@ MonoBehaviour:
   mWidth: 190
   mHeight: 60
   mDepth: 172
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.16666675
@@ -7758,6 +7805,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &706464706
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 706464703}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 190, y: 60}
+--- !u!114 &706464707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 706464703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 706464703}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &720406158
 GameObject:
   m_ObjectHideFlags: 0
@@ -7953,6 +8038,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 744198506}
   - 114: {fileID: 744198507}
+  - 114: {fileID: 744198509}
+  - 61: {fileID: 744198508}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -8007,7 +8094,7 @@ MonoBehaviour:
   mWidth: 189
   mHeight: 60
   mDepth: 120
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1500001
@@ -8024,6 +8111,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &744198508
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744198505}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 189, y: 60}
+--- !u!114 &744198509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744198505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 744198505}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &754540382
 GameObject:
   m_ObjectHideFlags: 0
@@ -8865,8 +8990,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 827318004}
   - 114: {fileID: 827318007}
-  - 61: {fileID: 827318006}
-  - 114: {fileID: 827318005}
   m_Layer: 8
   m_Name: CoinIcon
   m_TagString: Untagged
@@ -8886,35 +9009,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434815847}
   m_RootOrder: 0
---- !u!114 &827318005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 827318003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 827318003}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &827318006
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 827318003}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 51, y: 60}
 --- !u!114 &827318007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9301,7 +9395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &893740783
 Transform:
   m_ObjectHideFlags: 0
@@ -10139,8 +10233,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 969064272}
   - 114: {fileID: 969064275}
-  - 61: {fileID: 969064274}
-  - 114: {fileID: 969064273}
   m_Layer: 8
   m_Name: MoneyIcon
   m_TagString: Untagged
@@ -10160,35 +10252,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1238878895}
   m_RootOrder: 0
---- !u!114 &969064273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 969064271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 969064271}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &969064274
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 969064271}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 51, y: 60}
 --- !u!114 &969064275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11819,6 +11882,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1158140821}
   - 114: {fileID: 1158140822}
+  - 114: {fileID: 1158140824}
+  - 61: {fileID: 1158140823}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -11873,7 +11938,7 @@ MonoBehaviour:
   mWidth: 190
   mHeight: 60
   mDepth: 204
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.16666675
@@ -11890,6 +11955,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &1158140823
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158140820}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 190, y: 60}
+--- !u!114 &1158140824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158140820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 1158140820}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &1158825544
 GameObject:
   m_ObjectHideFlags: 0
@@ -11899,6 +12002,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1158825545}
   - 114: {fileID: 1158825546}
+  - 114: {fileID: 1158825548}
+  - 61: {fileID: 1158825547}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -11953,7 +12058,7 @@ MonoBehaviour:
   mWidth: 189
   mHeight: 60
   mDepth: 138
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1500001
@@ -11970,6 +12075,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &1158825547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158825544}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 189, y: 60}
+--- !u!114 &1158825548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158825544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 1158825544}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &1160478269
 GameObject:
   m_ObjectHideFlags: 0
@@ -13755,6 +13898,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1238878895}
   - 114: {fileID: 1238878896}
+  - 114: {fileID: 1238878898}
+  - 61: {fileID: 1238878897}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -13809,7 +13954,7 @@ MonoBehaviour:
   mWidth: 189
   mHeight: 60
   mDepth: 156
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1500001
@@ -13826,6 +13971,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &1238878897
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1238878894}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 189, y: 60}
+--- !u!114 &1238878898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1238878894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 1238878894}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &1243803722
 GameObject:
   m_ObjectHideFlags: 0
@@ -15182,8 +15365,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1413636085}
   - 114: {fileID: 1413636088}
-  - 61: {fileID: 1413636087}
-  - 114: {fileID: 1413636086}
   m_Layer: 8
   m_Name: MoneyIcon
   m_TagString: Untagged
@@ -15203,35 +15384,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 339552131}
   m_RootOrder: 0
---- !u!114 &1413636086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1413636084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 1413636084}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &1413636087
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1413636084}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 51, y: 60}
 --- !u!114 &1413636088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15639,8 +15791,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1479518125}
   - 114: {fileID: 1479518128}
-  - 61: {fileID: 1479518127}
-  - 114: {fileID: 1479518126}
   m_Layer: 8
   m_Name: GemIcon
   m_TagString: Untagged
@@ -15660,35 +15810,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 467161493}
   m_RootOrder: 0
---- !u!114 &1479518126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1479518124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 1479518124}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &1479518127
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1479518124}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 50, y: 60}
 --- !u!114 &1479518128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15883,6 +16004,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1536291328}
   - 114: {fileID: 1536291329}
+  - 114: {fileID: 1536291331}
+  - 61: {fileID: 1536291330}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -15937,7 +16060,7 @@ MonoBehaviour:
   mWidth: 189
   mHeight: 60
   mDepth: 129
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1500001
@@ -15954,6 +16077,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &1536291330
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536291327}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 189, y: 60}
+--- !u!114 &1536291331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536291327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 1536291327}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &1548169319
 GameObject:
   m_ObjectHideFlags: 0
@@ -16414,8 +16575,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1571620596}
   - 114: {fileID: 1571620599}
-  - 61: {fileID: 1571620598}
-  - 114: {fileID: 1571620597}
   m_Layer: 8
   m_Name: GemIcon
   m_TagString: Untagged
@@ -16435,35 +16594,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1158140821}
   m_RootOrder: 0
---- !u!114 &1571620597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1571620595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 1571620595}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &1571620598
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1571620595}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 50, y: 60}
 --- !u!114 &1571620599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17853,8 +17983,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1721666249}
   - 114: {fileID: 1721666252}
-  - 61: {fileID: 1721666251}
-  - 114: {fileID: 1721666250}
   m_Layer: 8
   m_Name: MoneyIcon
   m_TagString: Untagged
@@ -17874,35 +18002,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 706464704}
   m_RootOrder: 0
---- !u!114 &1721666250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1721666248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 1721666248}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &1721666251
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1721666248}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 51, y: 60}
 --- !u!114 &1721666252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18796,6 +18895,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1809442111}
   - 114: {fileID: 1809442110}
+  - 114: {fileID: 1809442113}
+  - 61: {fileID: 1809442112}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -18836,7 +18937,7 @@ MonoBehaviour:
   mWidth: 189
   mHeight: 60
   mDepth: 111
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1500001
@@ -18867,6 +18968,44 @@ Transform:
   - {fileID: 1960319532}
   m_Father: {fileID: 1415099325}
   m_RootOrder: 0
+--- !u!61 &1809442112
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809442109}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 189, y: 60}
+--- !u!114 &1809442113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809442109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 1809442109}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &1817968237
 GameObject:
   m_ObjectHideFlags: 0
@@ -18876,8 +19015,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1817968238}
   - 114: {fileID: 1817968241}
-  - 61: {fileID: 1817968240}
-  - 114: {fileID: 1817968239}
   m_Layer: 8
   m_Name: CoinIcon
   m_TagString: Untagged
@@ -18897,35 +19034,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1536291328}
   m_RootOrder: 0
---- !u!114 &1817968239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1817968237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 1817968237}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &1817968240
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1817968237}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 50, y: 60}
 --- !u!114 &1817968241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19453,8 +19561,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1876117927}
   - 114: {fileID: 1876117930}
-  - 61: {fileID: 1876117929}
-  - 114: {fileID: 1876117928}
   m_Layer: 8
   m_Name: CoinIcon
   m_TagString: Untagged
@@ -19474,35 +19580,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 744198506}
   m_RootOrder: 0
---- !u!114 &1876117928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876117926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cc9c62605319f4a9b20b15918913fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 1876117926}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
---- !u!61 &1876117929
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876117926}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 50, y: 60}
 --- !u!114 &1876117930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22025,6 +22102,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2106212606}
   - 114: {fileID: 2106212607}
+  - 114: {fileID: 2106212609}
+  - 61: {fileID: 2106212608}
   m_Layer: 8
   m_Name: Bar
   m_TagString: Untagged
@@ -22079,7 +22158,7 @@ MonoBehaviour:
   mWidth: 189
   mHeight: 60
   mDepth: 212
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 3.1500001
@@ -22096,6 +22175,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: Menuborder
   mFillCenter: 1
+--- !u!61 &2106212608
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106212605}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 189, y: 60}
+--- !u!114 &2106212609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106212605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 2106212605}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick: []
 --- !u!1 &2109916214
 GameObject:
   m_ObjectHideFlags: 0
