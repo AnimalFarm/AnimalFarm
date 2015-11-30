@@ -40,7 +40,7 @@ public class Eenemymove : MonoBehaviour
             v1 = (Vdir - transform.position).normalized;
             distancedir = Vector3.Distance(Vdir, transform.position);
 
-            if (distancedir > 3f)//이승환//멀어지면 빨라짐
+            if (distancedir > 4f)//이승환//멀어지면 빨라짐
             {
                 animator.SetBool("bRun", true);
                 animator.SetBool("bWalk", false);
@@ -48,7 +48,7 @@ public class Eenemymove : MonoBehaviour
                 // any.CrossFade("2_run", 0.25f);
                 speed = 2f; 
             }
-            else if (distancedir >0.85f)//이승환//가까운 속도
+            else if (distancedir >2f)//이승환//가까운 속도
             {
                 animator.SetBool("bWalk", true);
                 animator.SetBool("bRun", false);
@@ -67,7 +67,7 @@ public class Eenemymove : MonoBehaviour
             }
             //이승환//이동과 방향
             cc.Move(v1 * speed * Time.deltaTime);
-            cc.Move(new Vector3(0, -0.05f, 0));
+            cc.Move(new Vector3(0, -10f, 0));
 
             dir = Quaternion.LookRotation(v1);
             v2.y = dir.eulerAngles.y;
