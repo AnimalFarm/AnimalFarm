@@ -7,7 +7,7 @@ public class LobbyButton : MonoBehaviour
     public UIPanel lobbyPanel; // 로비 패널
     public UIButton ui_gameStart, ui_character, ui_shop; // 하단 버튼 게임시작,캐릭터,상점,랭킹
     public GameObject optionPopUp, finishPopUp, shopPopUp, characterPopUp, gameStartPopUp; // 각 버튼의 팝업
-    public UIScrollView ui_ShopPanel; // 상점 토글 패널
+    public UIScrollView ui_ShopPanel, ui_CharacterPanel;// 상점 토글 패널
     public UIToggle shop_Character, shop_Gem, shop_Coin; // 상점을 열면 우선 보여주는 화면
 
 
@@ -93,6 +93,7 @@ public class LobbyButton : MonoBehaviour
                 break;
             case "Character":
                 characterPopUp.SetActive(true);
+                ui_CharacterPanel.SetDragAmount(0, 0, false);
                 break;
             case "Start":
                 gameStartPopUp.SetActive(true);
