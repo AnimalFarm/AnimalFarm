@@ -10,7 +10,7 @@ public class LobbyButton : MonoBehaviour
     public UIScrollView ui_ShopPanel, ui_CharacterPanel;// 상점 토글 패널
     public UIToggle shop_Character, shop_Gem, shop_Coin; // 상점을 열면 우선 보여주는 화면
 
-
+    
     public IEnumerator SetButton()
     {
         while (true)

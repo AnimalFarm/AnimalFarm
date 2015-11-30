@@ -8,13 +8,12 @@ public class TitleScreen : MonoBehaviour
 
     public float delayTime = 0;
     private float timer;
-    public GameObject backGround,login;
+    public GameObject login;
     public UISprite bg;
 
 	void Awake ()
     {
         timer = delayTime;
-        bg = backGround.GetComponent<UISprite>();
         StartCoroutine(Loading());
 	}
     IEnumerator Loading()

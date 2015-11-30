@@ -9,7 +9,6 @@ public class VolumeManager : MonoBehaviour {
     public UISlider bgSoundBar;
     public UILabel bgSizeFont;
     public bool soundCheck = true;
-
 	
 	void Awake () 
     {
@@ -32,7 +31,9 @@ public class VolumeManager : MonoBehaviour {
             volumeControl.volume = bgSoundBar.value;
         }
         else
+        {
             volumeControl.volume = 0;
+        }
     }
 
 }
