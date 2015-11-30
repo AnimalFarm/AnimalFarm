@@ -68,7 +68,7 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 1
   - name: BarEdge
-    x: 771
+    x: 514
     y: 1792
     width: 256
     height: 256
@@ -81,7 +81,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bear
-    x: 1028
+    x: 771
     y: 1792
     width: 256
     height: 256
@@ -94,7 +94,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BearBG
-    x: 1285
+    x: 1028
     y: 1792
     width: 256
     height: 256
@@ -120,8 +120,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: Cat
-    x: 0
-    y: 1535
+    x: 1542
+    y: 1792
     width: 256
     height: 256
     borderLeft: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: CharacterBorder
     x: 0
-    y: 1021
+    y: 1278
     width: 256
     height: 256
     borderLeft: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: CharacterButton
-    x: 1748
+    x: 1234
     y: 658
     width: 236
     height: 128
@@ -173,7 +173,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: CharacterRoomBG
     x: 0
-    y: 507
+    y: 764
     width: 256
     height: 256
     borderLeft: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Choice
     x: 1234
-    y: 280
+    y: 538
     width: 236
     height: 119
     borderLeft: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
     paddingTop: 11
     paddingBottom: 8
   - name: CloseBorder
-    x: 514
+    x: 257
     y: 1535
     width: 256
     height: 256
@@ -224,7 +224,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Coin1
-    x: 771
+    x: 0
     y: 1535
     width: 256
     height: 256
@@ -237,8 +237,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Coin2
-    x: 0
-    y: 1278
+    x: 771
+    y: 1535
     width: 256
     height: 256
     borderLeft: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Coin3
-    x: 1285
+    x: 1028
     y: 1535
     width: 256
     height: 256
@@ -263,7 +263,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Coin4
-    x: 1542
+    x: 1285
     y: 1535
     width: 256
     height: 256
@@ -276,8 +276,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: CoinBG
-    x: 257
-    y: 1278
+    x: 1542
+    y: 1535
     width: 256
     height: 256
     borderLeft: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
     paddingBottom: 11
   - name: Dog
     x: 257
-    y: 764
+    y: 1021
     width: 256
     height: 256
     borderLeft: 0
@@ -316,35 +316,9 @@ MonoBehaviour:
     paddingBottom: 0
   - name: DogBG
     x: 257
-    y: 507
+    y: 764
     width: 256
     height: 256
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: GameClear
-    x: 1491
-    y: 787
-    width: 256
-    height: 128
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: GameOver
-    x: 1748
-    y: 787
-    width: 256
-    height: 128
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -368,7 +342,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: Gem6
     x: 257
-    y: 250
+    y: 507
     width: 256
     height: 256
     borderLeft: 0
@@ -393,8 +367,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Gem8
-    x: 514
-    y: 1278
+    x: 257
+    y: 250
     width: 256
     height: 256
     borderLeft: 0
@@ -406,7 +380,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: GemBG
-    x: 771
+    x: 514
     y: 1278
     width: 256
     height: 256
@@ -433,7 +407,7 @@ MonoBehaviour:
     paddingBottom: 31
   - name: glossy_lightgray_button_Vector_Clipart
     x: 514
-    y: 513
+    y: 258
     width: 254
     height: 254
     borderLeft: 0
@@ -459,7 +433,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: joystick
     x: 514
-    y: 258
+    y: 513
     width: 254
     height: 254
     borderLeft: 0
@@ -497,8 +471,8 @@ MonoBehaviour:
     paddingTop: 25
     paddingBottom: 25
   - name: MailList
-    x: 1491
-    y: 659
+    x: 1748
+    y: 788
     width: 256
     height: 127
     borderLeft: 0
@@ -536,7 +510,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Money
-    x: 1028
+    x: 771
     y: 1278
     width: 256
     height: 256
@@ -576,7 +550,7 @@ MonoBehaviour:
     paddingBottom: 4
   - name: Panda
     x: 257
-    y: 1021
+    y: 1278
     width: 256
     height: 256
     borderLeft: 0
@@ -588,7 +562,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: PandaBG
-    x: 1028
+    x: 514
     y: 1535
     width: 256
     height: 256
@@ -601,8 +575,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Penguin
-    x: 257
-    y: 1535
+    x: 0
+    y: 250
     width: 256
     height: 256
     borderLeft: 0
@@ -615,7 +589,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: PenguinBG
     x: 0
-    y: 250
+    y: 507
     width: 256
     height: 256
     borderLeft: 0
@@ -641,7 +615,7 @@ MonoBehaviour:
     paddingBottom: 4
   - name: Profile
     x: 0
-    y: 764
+    y: 1021
     width: 256
     height: 256
     borderLeft: 0
@@ -666,6 +640,19 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ProfileBorder
+    x: 1028
+    y: 1278
+    width: 256
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Rabbit
     x: 257
     y: 1792
     width: 256
@@ -678,21 +665,8 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: Rabbit
-    x: 514
-    y: 1792
-    width: 256
-    height: 256
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
   - name: RabbitBG
-    x: 1542
+    x: 1285
     y: 1792
     width: 256
     height: 256
@@ -718,8 +692,8 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 4
   - name: shopborder
-    x: 1234
-    y: 658
+    x: 1491
+    y: 787
     width: 256
     height: 128
     borderLeft: 0
@@ -731,8 +705,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ShopButton
-    x: 1234
-    y: 529
+    x: 1471
+    y: 658
     width: 236
     height: 128
     borderLeft: 0
@@ -770,8 +744,8 @@ MonoBehaviour:
     paddingTop: 10
     paddingBottom: 10
   - name: shopCoinDownIcon
-    x: 1258
-    y: 916
+    x: 769
+    y: 314
     width: 236
     height: 236
     borderLeft: 0
@@ -783,8 +757,8 @@ MonoBehaviour:
     paddingTop: 10
     paddingBottom: 10
   - name: shopCoinIcon
-    x: 769
-    y: 314
+    x: 1258
+    y: 916
     width: 236
     height: 236
     borderLeft: 0
@@ -835,8 +809,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: StartButton
-    x: 1234
-    y: 400
+    x: 1708
+    y: 658
     width: 236
     height: 128
     borderLeft: 0
