@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: f181db7336a652444ad37cc36f1df124, type: 2}
   mSprites:
   - name: developer
-    x: 0
-    y: 510
+    x: 2048
+    y: 1536
     width: 512
     height: 512
     borderLeft: 0
@@ -54,8 +54,47 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: GameClear
+    x: 3587
+    y: 1920
+    width: 256
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GameOver
+    x: 3587
+    y: 1791
+    width: 256
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Homebutton
+    x: 3844
+    y: 1793
+    width: 126
+    height: 126
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 1
   - name: Loading_A
-    x: 513
+    x: 2561
     y: 1536
     width: 512
     height: 512
@@ -68,8 +107,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Loading_B
-    x: 0
-    y: 1023
+    x: 3074
+    y: 1536
     width: 512
     height: 512
     borderLeft: 0
@@ -81,33 +120,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Loading_C
-    x: 0
-    y: 1536
-    width: 512
-    height: 512
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: Loading_D
-    x: 1026
-    y: 1536
-    width: 512
-    height: 512
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: LobbyBG
-    x: 513
+    x: 2048
     y: 1023
     width: 512
     height: 512
@@ -119,8 +132,60 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: Loading_D
+    x: 2048
+    y: 510
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: LobbyBG
+    x: 2561
+    y: 1023
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ResetButton
+    x: 3844
+    y: 1922
+    width: 127
+    height: 126
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 1
+    paddingBottom: 1
+  - name: Shop Atlas
+    x: 0
+    y: 1
+    width: 2047
+    height: 2047
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 0
   - name: startImage
-    x: 1026
+    x: 3074
     y: 1023
     width: 512
     height: 512
