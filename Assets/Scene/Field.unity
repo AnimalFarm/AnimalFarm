@@ -2715,7 +2715,7 @@ GameObject:
   - 4: {fileID: 698493629}
   - 114: {fileID: 698493630}
   m_Layer: 8
-  m_Name: Panel
+  m_Name: GameEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5666,7 +5666,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1340477709}
   m_Layer: 0
-  m_Name: _Map
+  m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7300,6 +7300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test: {fileID: 1752602856}
+  HP: 100
 --- !u!1 &1754774526
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,23 +10,11 @@ public class CameraSmooth : MonoBehaviour
     public float height = 5.0f;
     public float maxHeight = 30.0f;
     public float heightDamping = 2.0f;
-
     public float rotation = 0;
     public float rotationDamping = 3.0f;
-
     public float rotationFactor = 1;
     public float zoomFactor = 1;
 
-    private Transform tm;
-
-    // Use this for initialization
-    void Start()
-    {
-        // lcoal caching for the performance.
-        this.tm = this.gameObject.transform;
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (target)
@@ -47,21 +35,21 @@ public class CameraSmooth : MonoBehaviour
                 currentHeight = wantedHeight;
 
             // position.
-            this.tm.position = target.position;
-            this.tm.position -= Vector3.forward * distance;
+            this.transform.position = target.position;
+            this.transform.position -= Vector3.forward * distance;
 
-            Vector3 pos = this.tm.position;
+            Vector3 pos = this.transform.position;
             pos.y = currentHeight;
-            this.tm.position = pos;
+            this.transform.position = pos;
 
             // rotation.
             float wantedRotation = this.rotation;
             if (this.rotationDamping != 0)
             {
-                wantedRotation = Mathf.LerpAngle(tm.eulerAngles.y, this.rotation, this.rotationDamping * Time.deltaTime);
+                wantedRotation = Mathf.LerpAngle(transform.eulerAngles.y, this.rotation, this.rotationDamping * Time.deltaTime);
             }
-            this.tm.RotateAround(target.position, Vector3.up, wantedRotation);
-            this.tm.LookAt(target);
+            this.transform.RotateAround(target.position, Vector3.up, wantedRotation);
+            this.transform.LookAt(target);
         }
     }
 }

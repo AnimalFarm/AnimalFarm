@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyCheking : MonoBehaviour {
 
     public GameObject Enemy;    //Enemy 오브잭트
-    
+
     void OnTriggerEnter(Collider order)//이승환//오브젝트와 콜리더가 처음 충돌했을 때 한번 한번호출
     {
         if (order.tag == "Player")
@@ -13,7 +13,6 @@ public class EnemyCheking : MonoBehaviour {
             Enemy.GetComponent<Eenemymove>().moveOn = true;
         }
     }
-
     void OnTriggerStay(Collider order)//이승환//콜리더안에 오브젝트가 움직일때마다 호출
     {
         if (order.tag == "Player")
