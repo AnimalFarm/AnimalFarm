@@ -11,53 +11,49 @@ public class LobbyButton : MonoBehaviour
     public UIToggle shop_Character, shop_Gem, shop_Coin; // 상점을 열면 우선 보여주는 화면
 
     
-    public IEnumerator SetButton()
+    void Update()
     {
-        while (true)
-        {
-            if (!lobbyPanel.isActiveAndEnabled)
-                yield break;
+        if (!lobbyPanel.isActiveAndEnabled)
+            return;
 
-            if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (shopPopUp.activeSelf)
             {
-                if (shopPopUp.activeSelf)
-                {
-                    shopPopUp.SetActive(false);
-                }
-                else if (optionPopUp.activeSelf)
-                {
-                    optionPopUp.SetActive(false);
-                }
-                else if (finishPopUp.activeSelf)
-                {
-                    finishPopUp.SetActive(false);
-                }
-                else if (characterPopUp.activeSelf)
-                {
-                    characterPopUp.SetActive(false);
-                }
-                else if (gameStartPopUp.activeSelf)
-                {
-                    gameStartPopUp.SetActive(false);
-                }
-                else
-                {
-                    finishPopUp.SetActive(true);
-                }
+                shopPopUp.SetActive(false);
             }
-            if (shopPopUp.activeSelf || characterPopUp.activeSelf)
+            else if (optionPopUp.activeSelf)
             {
-                ui_gameStart.enabled = false;
-                ui_character.enabled = false;
-                ui_shop.enabled = false;
+                optionPopUp.SetActive(false);
+            }
+            else if (finishPopUp.activeSelf)
+            {
+                finishPopUp.SetActive(false);
+            }
+            else if (characterPopUp.activeSelf)
+            {
+                characterPopUp.SetActive(false);
+            }
+            else if (gameStartPopUp.activeSelf)
+            {
+                gameStartPopUp.SetActive(false);
             }
             else
             {
-                ui_gameStart.enabled = true;
-                ui_character.enabled = true;
-                ui_shop.enabled = true;
+                finishPopUp.SetActive(true);
             }
-            yield return null;
+        }
+        if (shopPopUp.activeSelf || characterPopUp.activeSelf)
+        {
+            ui_gameStart.enabled = false;
+            ui_character.enabled = false;
+            ui_shop.enabled = false;
+        }
+        else
+        {
+            ui_gameStart.enabled = true;
+            ui_character.enabled = true;
+            ui_shop.enabled = true;
         }
     }
     public void OnOffButton(GameObject g)
