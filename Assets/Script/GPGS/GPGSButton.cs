@@ -26,10 +26,12 @@ public class GPGSButton : MonoBehaviour
                 loadingPanel.SetActive(false);
                 StartCoroutine(startButton.SetButton());
 
-                if (GPGSMng.GetInstance.GetImageGPGS() != null)
-                {
-                    user_Photo.mainTexture = GPGSMng.GetInstance.GetImageGPGS();
-                }
+                //if (GPGSMng.GetInstance.GetImageGPGS() != null)
+                //{
+                    
+                //    Debug.Log("dfdfdfdfdfdfdf");
+                //}
+                user_Photo.mainTexture = GPGSMng.GetInstance.GetImageGPGS();
                 userName.text = GPGSMng.GetInstance.GetNameGPGS();
                 userID = GPGSMng.GetInstance.GetUserIDGPGS();
                 yield break;
