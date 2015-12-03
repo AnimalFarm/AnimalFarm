@@ -8,6 +8,8 @@ public class Eenemymove : MonoBehaviour
     public Animation any;           //Enemy의 에니메이션
     public float speed;             //Enemy의 스피드
     public Vector3 Vdir;            //EnemyCheking에서 Player의 위치값을 받아온다
+    public float Hp;
+    public UISprite test;
 
     float distancedir;              //Enemy와 player의 거리, 작아질수록 가까워진다
 
@@ -18,6 +20,13 @@ public class Eenemymove : MonoBehaviour
     public Animator animator;
 
     public bool attackOn = false, moveOn = false;// 어택과 무브 온오프
+
+    void Awake()
+    {
+        test.fillAmount = Hp;
+        
+       // test.fillAmount -= Time.deltaTime * 0.1f;
+    }
 
     void Update()
     {
