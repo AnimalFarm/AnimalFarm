@@ -3347,7 +3347,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 0
   renderQueue: 0
-  startingRenderQueue: 3008
+  startingRenderQueue: 3010
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -3901,7 +3901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &339897688
 Transform:
   m_ObjectHideFlags: 0
@@ -3909,7 +3909,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 339897687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -313, y: -95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 170460850}
@@ -3936,8 +3936,8 @@ MonoBehaviour:
   cellWidth: 275
   cellHeight: 0
   animateSmoothly: 1
-  hideInactive: 0
-  keepWithinPanel: 1
+  hideInactive: 1
+  keepWithinPanel: 0
   sorted: 0
 --- !u!1 &346646022
 GameObject:
@@ -5085,6 +5085,8 @@ MonoBehaviour:
     mMethodName: BuyCharacter
     mParameters:
     - obj: {fileID: 1037839557}
+      field: 
+    - obj: {fileID: 1610273288}
       field: 
     oneShot: 0
 --- !u!1 &467161492
@@ -8367,6 +8369,8 @@ MonoBehaviour:
     mParameters:
     - obj: {fileID: 53543690}
       field: 
+    - obj: {fileID: 1106710758}
+      field: 
     oneShot: 0
 --- !u!1 &745473147
 GameObject:
@@ -8565,7 +8569,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 768491851}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 907, y: -93, z: 0}
+  m_LocalPosition: {x: 1100, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1158825545}
@@ -11996,7 +12000,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1106710758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 297, y: -94, z: 0}
+  m_LocalPosition: {x: 550, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 744198506}
@@ -12563,6 +12567,8 @@ MonoBehaviour:
     mMethodName: BuyCharacter
     mParameters:
     - obj: {fileID: 1266561599}
+      field: 
+    - obj: {fileID: 768491851}
       field: 
     oneShot: 0
 --- !u!1 &1160478269
@@ -15584,6 +15590,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gold_Label: {fileID: 528711879}
   gem_Label: {fileID: 1735142736}
+  buyCharacter: 0
+  shoptUIPanel: {fileID: 1164805002}
+  shopCharacterGrid: {fileID: 1711740056}
 --- !u!1 &1368206966
 GameObject:
   m_ObjectHideFlags: 0
@@ -16128,7 +16137,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1415099324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9, y: -94, z: 0}
+  m_LocalPosition: {x: 275, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1809442111}
@@ -16632,7 +16641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1489317402
 Transform:
   m_ObjectHideFlags: 0
@@ -16640,7 +16649,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1489317401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -313, y: -95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1250977702}
@@ -16667,8 +16676,8 @@ MonoBehaviour:
   cellWidth: 275
   cellHeight: 0
   animateSmoothly: 1
-  hideInactive: 0
-  keepWithinPanel: 1
+  hideInactive: 1
+  keepWithinPanel: 0
   sorted: 0
 --- !u!1 &1535479757
 GameObject:
@@ -16876,6 +16885,8 @@ MonoBehaviour:
     mMethodName: BuyCharacter
     mParameters:
     - obj: {fileID: 1355963744}
+      field: 
+    - obj: {fileID: 1989333398}
       field: 
     oneShot: 0
 --- !u!1 &1548169319
@@ -17665,7 +17676,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1610273288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -313, y: -94, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 434815847}
@@ -18234,6 +18245,8 @@ MonoBehaviour:
   shop_Character: {fileID: 1080689127}
   shop_Gem: {fileID: 281513462}
   shop_Coin: {fileID: 1361932222}
+  characterGrid: {fileID: 2085237528}
+  shop_CharacterGrid: {fileID: 1711740056}
 --- !u!114 &1676424614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18631,7 +18644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1711740054
 Transform:
   m_ObjectHideFlags: 0
@@ -18639,7 +18652,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1711740053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -313, y: -95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1610273289}
@@ -18667,8 +18680,8 @@ MonoBehaviour:
   cellWidth: 275
   cellHeight: 0
   animateSmoothly: 1
-  hideInactive: 0
-  keepWithinPanel: 1
+  hideInactive: 1
+  keepWithinPanel: 0
   sorted: 0
 --- !u!1 &1715927289
 GameObject:
@@ -19878,6 +19891,8 @@ MonoBehaviour:
     mMethodName: BuyCharacter
     mParameters:
     - obj: {fileID: 1960319533}
+      field: 
+    - obj: {fileID: 1415099324}
       field: 
     oneShot: 0
 --- !u!1 &1817968237
@@ -21765,7 +21780,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989333398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 602, y: -94, z: 0}
+  m_LocalPosition: {x: 825, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1536291328}

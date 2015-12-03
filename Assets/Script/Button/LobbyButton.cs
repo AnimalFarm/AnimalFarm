@@ -9,7 +9,7 @@ public class LobbyButton : MonoBehaviour
     public GameObject optionPopUp, finishPopUp, shopPopUp, characterPopUp, gameStartPopUp; // 각 버튼의 팝업
     public UIScrollView ui_ShopPanel, ui_CharacterPanel;// 상점 토글 패널
     public UIToggle shop_Character, shop_Gem, shop_Coin; // 상점을 열면 우선 보여주는 화면
-
+    public UIGrid characterGrid, shop_CharacterGrid; // 그리드
     
     void Update()
     {
@@ -78,8 +78,9 @@ public class LobbyButton : MonoBehaviour
                 break;
             case "Shop":
                 shopPopUp.SetActive(true);
-                ui_ShopPanel.SetDragAmount(0, 0, false);
-                shop_Character.value = true;
+                ui_ShopPanel.SetDragAmount(0, 0, false); // 카드 위치 초기화
+                shop_Character.value = true; // 각각의 목록 켜주는 부분
+                shop_CharacterGrid.Reposition(); // 그리드 재정렬
                 break;
             case "Option":
                 optionPopUp.SetActive(true);
@@ -89,14 +90,14 @@ public class LobbyButton : MonoBehaviour
                 break;
             case "Character":
                 characterPopUp.SetActive(true);
-                ui_CharacterPanel.SetDragAmount(0, 0, false);
+                ui_CharacterPanel.SetDragAmount(0, 0, false); 
+                characterGrid.Reposition();
                 break;
             case "Start":
                 gameStartPopUp.SetActive(true);
                 break;
         }
     }
-
     public void OnOffPopUp(GameObject g)
     {
         g.SetActive(false);
