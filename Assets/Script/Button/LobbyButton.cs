@@ -2,6 +2,7 @@
 using System.Collections;
 
 // 노승현, 로비 버튼 이벤트 스크립트
+
 public class LobbyButton : MonoBehaviour
 {
     public UIPanel lobbyPanel; // 로비 패널
@@ -10,12 +11,25 @@ public class LobbyButton : MonoBehaviour
     public UIScrollView ui_ShopPanel, ui_CharacterPanel;// 상점 토글 패널
     public UIToggle shop_Character, shop_Gem, shop_Coin; // 상점을 열면 우선 보여주는 화면
     public UIGrid characterGrid, shop_CharacterGrid; // 그리드
+    public GameObject character_3D;
     
     void Update()
     {
+        //노승현, 로비 패널이 꺼져있다면
         if (!lobbyPanel.isActiveAndEnabled)
             return;
 
+        //노승현,3D 모델링이 보이면 안되는 상황
+        if (lobbyPanel.isActiveAndEnabled && !shopPopUp.activeSelf && !optionPopUp.activeSelf &&
+            !finishPopUp.activeSelf && !characterPopUp.activeSelf && !gameStartPopUp.activeSelf && !shopPopUp.activeSelf && !characterPopUp.activeSelf)
+        {
+            character_3D.SetActive(true);
+        }
+        else
+        {
+            character_3D.SetActive(false);
+        }
+        //노승현, 빽키 입력시
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (shopPopUp.activeSelf)
@@ -43,6 +57,7 @@ public class LobbyButton : MonoBehaviour
                 finishPopUp.SetActive(true);
             }
         }
+        //노승현, 팝업이 있을시
         if (shopPopUp.activeSelf || characterPopUp.activeSelf)
         {
             ui_gameStart.enabled = false;
