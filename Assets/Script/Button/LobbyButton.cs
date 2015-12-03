@@ -2,6 +2,7 @@
 using System.Collections;
 
 // 노승현, 로비 버튼 이벤트 스크립트
+
 public class LobbyButton : MonoBehaviour
 {
     public UIPanel lobbyPanel; // 로비 패널
@@ -9,13 +10,26 @@ public class LobbyButton : MonoBehaviour
     public GameObject optionPopUp, finishPopUp, shopPopUp, characterPopUp, gameStartPopUp; // 각 버튼의 팝업
     public UIScrollView ui_ShopPanel, ui_CharacterPanel;// 상점 토글 패널
     public UIToggle shop_Character, shop_Gem, shop_Coin; // 상점을 열면 우선 보여주는 화면
-
+    public UIGrid characterGrid, shop_CharacterGrid; // 그리드
+    public GameObject character_3D;
     
     void Update()
     {
+        //노승현, 로비 패널이 꺼져있다면
         if (!lobbyPanel.isActiveAndEnabled)
             return;
 
+        //노승현,3D 모델링이 보이면 안되는 상황
+        if (lobbyPanel.isActiveAndEnabled && !shopPopUp.activeSelf && !optionPopUp.activeSelf &&
+            !finishPopUp.activeSelf && !characterPopUp.activeSelf && !gameStartPopUp.activeSelf && !shopPopUp.activeSelf && !characterPopUp.activeSelf)
+        {
+            character_3D.SetActive(true);
+        }
+        else
+        {
+            character_3D.SetActive(false);
+        }
+        //노승현, 빽키 입력시
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (shopPopUp.activeSelf)
@@ -43,6 +57,7 @@ public class LobbyButton : MonoBehaviour
                 finishPopUp.SetActive(true);
             }
         }
+        //노승현, 팝업이 있을시
         if (shopPopUp.activeSelf || characterPopUp.activeSelf)
         {
             ui_gameStart.enabled = false;
@@ -78,8 +93,9 @@ public class LobbyButton : MonoBehaviour
                 break;
             case "Shop":
                 shopPopUp.SetActive(true);
-                ui_ShopPanel.SetDragAmount(0, 0, false);
-                shop_Character.value = true;
+                ui_ShopPanel.SetDragAmount(0, 0, false); // 카드 위치 초기화
+                shop_Character.value = true; // 각각의 목록 켜주는 부분
+                shop_CharacterGrid.Reposition(); // 그리드 재정렬
                 break;
             case "Option":
                 optionPopUp.SetActive(true);
@@ -89,14 +105,14 @@ public class LobbyButton : MonoBehaviour
                 break;
             case "Character":
                 characterPopUp.SetActive(true);
-                ui_CharacterPanel.SetDragAmount(0, 0, false);
+                ui_CharacterPanel.SetDragAmount(0, 0, false); 
+                characterGrid.Reposition();
                 break;
             case "Start":
                 gameStartPopUp.SetActive(true);
                 break;
         }
     }
-
     public void OnOffPopUp(GameObject g)
     {
         g.SetActive(false);

@@ -39,6 +39,6 @@ public class ButtonEvent : MonoBehaviour {
     IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(2);
-        Application.LoadLevel("Map");
+        Application.LoadLevel("Field");
     }
 }
