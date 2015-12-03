@@ -11,6 +11,7 @@ public class SetShop : MonoBehaviour {
     public bool buyCharacter = false;
     public UIPanel shoptUIPanel;
     public UIGrid shopCharacterGrid;
+    public CharacterChoice character;
              
     void Awake()
     {
@@ -55,5 +56,6 @@ public class SetShop : MonoBehaviour {
     {
         buyCharacter.SetActive(false);
         shopCharacterGrid.Reposition();
+        character.ChoiceCharacter(buyCharacter);
     }
 }
