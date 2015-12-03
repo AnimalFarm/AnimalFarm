@@ -983,6 +983,10 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: BearBG
   mFillCenter: 1
+--- !u!1 &100061589 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 158800, guid: 0eb097425e3649a43b27ebf2d79f6f74, type: 2}
+  m_PrefabInternal: {fileID: 1666417299}
 --- !u!4 &127527237 stripped
 Transform:
   m_PrefabParentObject: {fileID: 493982, guid: 3da29ddcef5ef9349945db484b6d0b76, type: 2}
@@ -2158,6 +2162,7 @@ GameObject:
   - 114: {fileID: 218728764}
   - 61: {fileID: 218728763}
   - 114: {fileID: 218728762}
+  - 114: {fileID: 218728767}
   m_Layer: 8
   m_Name: Character (1)
   m_TagString: Untagged
@@ -2294,6 +2299,22 @@ MonoBehaviour:
   trigger: 0
   volume: 1
   pitch: 1
+--- !u!114 &218728767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 218728760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f48ecc218d2db49baa9ac1bfe73ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activate:
+  - {fileID: 1092468703}
+  deactivate: []
+  target: {fileID: 0}
+  inverse: 0
 --- !u!1 &230378055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,6 +4559,7 @@ GameObject:
   - 114: {fileID: 387291053}
   - 61: {fileID: 387291052}
   - 114: {fileID: 387291051}
+  - 114: {fileID: 387291056}
   m_Layer: 8
   m_Name: Character
   m_TagString: Untagged
@@ -4674,6 +4696,22 @@ MonoBehaviour:
   trigger: 0
   volume: 1
   pitch: 1
+--- !u!114 &387291056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 387291049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f48ecc218d2db49baa9ac1bfe73ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activate:
+  - {fileID: 100061589}
+  deactivate: []
+  target: {fileID: 0}
+  inverse: 0
 --- !u!1 &412282933
 GameObject:
   m_ObjectHideFlags: 0
@@ -8545,6 +8583,10 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 413552, guid: 0eb097425e3649a43b27ebf2d79f6f74, type: 2}
   m_PrefabInternal: {fileID: 1666417299}
+--- !u!1 &745102703 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 189676, guid: ed39e1ea31308a949bc16ab5f8917543, type: 2}
+  m_PrefabInternal: {fileID: 459848527}
 --- !u!1 &745473147
 GameObject:
   m_ObjectHideFlags: 0
@@ -9751,6 +9793,7 @@ GameObject:
   - 114: {fileID: 861538561}
   - 61: {fileID: 861538560}
   - 114: {fileID: 861538559}
+  - 114: {fileID: 861538564}
   m_Layer: 8
   m_Name: Character (3)
   m_TagString: Untagged
@@ -9887,6 +9930,22 @@ MonoBehaviour:
   trigger: 0
   volume: 1
   pitch: 1
+--- !u!114 &861538564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 861538557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f48ecc218d2db49baa9ac1bfe73ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activate:
+  - {fileID: 1704902462}
+  deactivate: []
+  target: {fileID: 0}
+  inverse: 0
 --- !u!1 &872402929
 GameObject:
   m_ObjectHideFlags: 0
@@ -11482,6 +11541,7 @@ GameObject:
   - 114: {fileID: 1075002087}
   - 61: {fileID: 1075002086}
   - 114: {fileID: 1075002085}
+  - 114: {fileID: 1075002090}
   m_Layer: 8
   m_Name: Character (2)
   m_TagString: Untagged
@@ -11618,6 +11678,22 @@ MonoBehaviour:
   trigger: 0
   volume: 1
   pitch: 1
+--- !u!114 &1075002090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075002083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f48ecc218d2db49baa9ac1bfe73ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activate:
+  - {fileID: 745102703}
+  deactivate: []
+  target: {fileID: 0}
+  inverse: 0
 --- !u!1 &1080689123
 GameObject:
   m_ObjectHideFlags: 0
@@ -11927,6 +12003,10 @@ Transform:
   - {fileID: 1191698086}
   m_Father: {fileID: 1972573050}
   m_RootOrder: 2
+--- !u!1 &1092468703 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 117356, guid: b01acd08a50e9d34d9ff2a3be656c5d1, type: 2}
+  m_PrefabInternal: {fileID: 2085562930}
 --- !u!1 &1094163708
 GameObject:
   m_ObjectHideFlags: 0
@@ -15662,6 +15742,10 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!1 &1346616020 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 141822, guid: 175173a698d121b41a215b8d5bc8ac99, type: 2}
+  m_PrefabInternal: {fileID: 1118567528}
 --- !u!1 &1355963742
 GameObject:
   m_ObjectHideFlags: 0
@@ -18775,7 +18859,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 158800, guid: 0eb097425e3649a43b27ebf2d79f6f74, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0eb097425e3649a43b27ebf2d79f6f74, type: 2}
@@ -19319,6 +19403,10 @@ MonoBehaviour:
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
   mSpriteName: RabbitBG
   mFillCenter: 1
+--- !u!1 &1704902462 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 132362, guid: 3da29ddcef5ef9349945db484b6d0b76, type: 2}
+  m_PrefabInternal: {fileID: 1493040378}
 --- !u!1 &1711740053
 GameObject:
   m_ObjectHideFlags: 0
@@ -22253,6 +22341,7 @@ GameObject:
   - 114: {fileID: 1981591444}
   - 61: {fileID: 1981591443}
   - 114: {fileID: 1981591442}
+  - 114: {fileID: 1981591447}
   m_Layer: 8
   m_Name: Character (4)
   m_TagString: Untagged
@@ -22389,6 +22478,22 @@ MonoBehaviour:
   trigger: 0
   volume: 1
   pitch: 1
+--- !u!114 &1981591447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1981591440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f48ecc218d2db49baa9ac1bfe73ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activate:
+  - {fileID: 1346616020}
+  deactivate: []
+  target: {fileID: 0}
+  inverse: 0
 --- !u!1 &1989333398
 GameObject:
   m_ObjectHideFlags: 0
@@ -23271,7 +23376,7 @@ MonoBehaviour:
   cellHeight: 0
   animateSmoothly: 1
   hideInactive: 1
-  keepWithinPanel: 0
+  keepWithinPanel: 1
   sorted: 0
 --- !u!1001 &2085562930
 Prefab:
