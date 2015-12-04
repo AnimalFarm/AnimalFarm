@@ -6,7 +6,7 @@ using System.Collections;
 public class ButtonEvent : MonoBehaviour {
     public GameObject roundPanel;
     public GameObject loadingBear, loadingRabbit, loadingPanda, loadingDog; // 각각의 라운드별 로딩창
-    public enum boss { bear = 1, dog = 2, rabbit = 3, panda = 4};
+    public enum boss { bear = 1, dog, rabbit, panda};
     public static int BOSS;
 
 	

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Boss : MonoBehaviour {
-    public GameObject Bear, Rabbit, Panda, Dog;
+    public GameObject bear, rabbit, panda, dog;
     
 
     void Awake () 
@@ -20,16 +20,16 @@ public class Boss : MonoBehaviour {
         switch (ButtonEvent.BOSS)
         {
             case 1:
-                Bear.SetActive(true);
+                bear.SetActive(true);
                 break;
             case 2:
-                Dog.SetActive(true);
+                dog.SetActive(true);
                 break;
             case 3:
-                Rabbit.SetActive(true);
+                rabbit.SetActive(true);
                 break;
             case 4:
-                Panda.SetActive(true);
+                panda.SetActive(true);
                 break;
         }     
     }

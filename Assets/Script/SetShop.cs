@@ -56,6 +56,6 @@ public class SetShop : MonoBehaviour {
     {
         buyCharacter.SetActive(false);
         shopCharacterGrid.Reposition();
-        character.ChoiceCharacter(buyCharacter);
+        character.Character(buyCharacter);
     }
 }
