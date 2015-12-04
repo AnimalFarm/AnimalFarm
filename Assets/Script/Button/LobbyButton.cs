@@ -12,6 +12,7 @@ public class LobbyButton : MonoBehaviour
     public UIToggle shop_Character, shop_Gem, shop_Coin; // 상점을 열면 우선 보여주는 화면
     public UIGrid characterGrid, shop_CharacterGrid; // 그리드
     public GameObject character_3D;
+    public UILabel yesOrnoMessage;
     
     void Update()
     {
@@ -101,6 +102,7 @@ public class LobbyButton : MonoBehaviour
                 optionPopUp.SetActive(true);
                 break;
             case "Close":
+                yesOrnoMessage.text = "게임을 정말 종료 하시겠습니까?";
                 finishPopUp.SetActive(true);
                 break;
             case "Character":
@@ -121,9 +123,19 @@ public class LobbyButton : MonoBehaviour
     {
         ui_ShopPanel.SetDragAmount(0, 0, false);
     }
-    public void EndGame()
+    public void Identity(UILabel message)
     {
-        Application.Quit();
+        switch(message.text)
+        {
+            case "게임을 정말 종료 하시겠습니까?":
+                Application.Quit();
+                break;
+            case "캐릭터 메뉴에서 캐릭터를 선택하세요.":
+                finishPopUp.SetActive(false);
+                characterPopUp.SetActive(true);
+                break;
+        }
+        
     }
     void OnApplicationQuit()
     {

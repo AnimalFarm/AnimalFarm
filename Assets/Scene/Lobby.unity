@@ -2485,7 +2485,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 749
   mHeight: 92
-  mDepth: 201
+  mDepth: 501
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -2493,7 +2493,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
-  mText: "\uAC8C\uC784\uC744  \uC815\uB9D0  \uC885\uB8CC  \uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+  mText: "\uAC8C\uC784\uC744 \uC815\uB9D0 \uC885\uB8CC \uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
   mFontSize: 28
   mFontStyle: 1
   mAlignment: 0
@@ -4514,7 +4514,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 55
   mHeight: 50
-  mDepth: 203
+  mDepth: 503
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -6226,7 +6226,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 55
   mHeight: 50
-  mDepth: 202
+  mDepth: 502
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -6285,8 +6285,10 @@ MonoBehaviour:
   pixelSnap: 0
   onClick:
   - mTarget: {fileID: 1676424613}
-    mMethodName: EndGame
-    mParameters: []
+    mMethodName: Identity
+    mParameters:
+    - obj: {fileID: 230505986}
+      field: 
     oneShot: 0
 --- !u!1 &548903125
 GameObject:
@@ -14388,7 +14390,7 @@ GameObject:
   - 4: {fileID: 1226611196}
   - 114: {fileID: 1226611197}
   m_Layer: 8
-  m_Name: GameClose
+  m_Name: YesOrNo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14441,7 +14443,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 749
   mHeight: 392
-  mDepth: 200
+  mDepth: 500
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -19148,6 +19150,7 @@ MonoBehaviour:
   characterGrid: {fileID: 2085237528}
   shop_CharacterGrid: {fileID: 1711740056}
   character_3D: {fileID: 959677127}
+  yesOrnoMessage: {fileID: 230505986}
 --- !u!114 &1676424614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19280,7 +19283,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6e189f4d417bd4995fa5e147d92f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundPanel: {fileID: 1585622137}
+  roundPanel: {fileID: 893740782}
+  loadingPanel: {fileID: 1585622137}
+  yesOrno: {fileID: 1226611195}
+  yesOrnoMessage: {fileID: 230505986}
   loadingBear: {fileID: 754540382}
   loadingRabbit: {fileID: 585433324}
   loadingPanda: {fileID: 2099137524}
