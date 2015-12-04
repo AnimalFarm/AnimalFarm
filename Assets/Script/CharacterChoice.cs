@@ -21,9 +21,6 @@ public class CharacterChoice : MonoBehaviour {
     {
         switch (obj.name)
         {
-            case "CharacterItem": // 곰
-                bear.SetActive(true);
-                break;
             case "CharacterItem (1)": // 개
                 dog.SetActive(true);
                 break;

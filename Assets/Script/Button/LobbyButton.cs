@@ -107,7 +107,7 @@ public class LobbyButton : MonoBehaviour
                 break;
             case "Character":
                 characterPopUp.SetActive(true);
-                ui_CharacterPanel.SetDragAmount(0, 0, false); 
+                ui_CharacterPanel.SetDragAmount(0, 0, false);
                 characterGrid.Reposition();
                 break;
             case "Start":
