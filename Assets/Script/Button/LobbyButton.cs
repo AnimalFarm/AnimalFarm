@@ -28,7 +28,12 @@ public class LobbyButton : MonoBehaviour
         }
         else
         {
-            character_3D.SetActive(false);
+            Collider[] obj = character_3D.GetComponentsInChildren<Collider>();
+            for (int i = 0; i < obj.Length; i++)
+            {
+                obj[i].transform.rotation = new Quaternion(0, 180, 0, 0);
+            }
+                character_3D.SetActive(false);
         }
         //노승현, 빽키 입력시
         if (Input.GetKeyDown(KeyCode.Escape))

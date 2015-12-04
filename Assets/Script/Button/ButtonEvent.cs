@@ -4,23 +4,14 @@ using System.Collections;
 //노승현, 각각의 버튼이 눌렸을때 실행되는 스크립트
 
 public class ButtonEvent : MonoBehaviour {
-    public GameObject roundPanel,loadingPanel;
 
+    public GameObject roundPanel,loadingPanel;
     public GameObject yesOrno; // 예아니요 팝업
     public UILabel yesOrnoMessage;
     public GameObject loadingBear, loadingRabbit, loadingPanda, loadingDog; // 각각의 라운드별 로딩창
     public enum boss { bear = 1, dog, rabbit, panda};
     public static int BOSS;
 
-	
-    void Awake()
-    {
-	
-	}
-	void Update () 
-    {
-	
-	}
     public void GameStart(GameObject g)
     {
         roundPanel.SetActive(true);

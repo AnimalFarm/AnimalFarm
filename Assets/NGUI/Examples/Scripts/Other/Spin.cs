@@ -42,11 +42,11 @@ public class Spin : MonoBehaviour
 
 		if (mRb == null)
 		{
-			mTrans.rotation = mTrans.rotation * offset;
+			//mTrans.rotation = mTrans.rotation * offset;
 		}
 		else
 		{
-			mRb.MoveRotation(mRb.rotation * offset);
+			//mRb.MoveRotation(mRb.rotation * offset);
 		}
 	}
 }
