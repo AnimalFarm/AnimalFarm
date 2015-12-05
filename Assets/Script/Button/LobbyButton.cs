@@ -136,7 +136,6 @@ public class LobbyButton : MonoBehaviour
                 Application.Quit();
                 break;
             case "캐릭터 메뉴에서 캐릭터를 선택하세요.":
-                finishPopUp.SetActive(false);
                 characterPopUp.SetActive(true);
                 break;
         }

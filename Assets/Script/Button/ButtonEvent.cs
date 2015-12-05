@@ -17,7 +17,6 @@ public class ButtonEvent : MonoBehaviour {
         roundPanel.SetActive(true);
         if (CharacterChoice.PLAYER_CHOICE == 0)
         {
-            roundPanel.SetActive(false);
             yesOrno.SetActive(true);
             yesOrnoMessage.text = "캐릭터 메뉴에서 캐릭터를 선택하세요.";
             return;
