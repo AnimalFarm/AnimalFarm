@@ -56,7 +56,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: BossHPBar
     x: 1539
-    y: 1791
+    y: 1663
     width: 256
     height: 128
     borderLeft: 0
@@ -68,8 +68,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BossHPBorder
-    x: 1539
-    y: 1407
+    x: 513
+    y: 507
     width: 254
     height: 128
     borderLeft: 0
@@ -80,9 +80,22 @@ MonoBehaviour:
     paddingRight: 1
     paddingTop: 0
     paddingBottom: 0
+  - name: Cancellation
+    x: 0
+    y: 253
+    width: 256
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: CharacterHP
-    x: 1539
-    y: 1920
+    x: 0
+    y: 124
     width: 256
     height: 128
     borderLeft: 0
@@ -107,7 +120,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: DogCondition
-    x: 256
+    x: 257
     y: 252
     width: 255
     height: 128
@@ -121,7 +134,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: GameClear
     x: 1539
-    y: 1662
+    y: 1150
     width: 256
     height: 128
     borderLeft: 0
@@ -133,8 +146,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: GameOver
-    x: 0
-    y: 381
+    x: 513
+    y: 894
     width: 256
     height: 128
     borderLeft: 0
@@ -147,7 +160,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Homebutton
     x: 1796
-    y: 1793
+    y: 1795
     width: 126
     height: 126
     borderLeft: 0
@@ -223,8 +236,21 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: Notice
+    x: 1539
+    y: 1792
+    width: 256
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: PandaCondition
-    x: 256
+    x: 257
     y: 123
     width: 255
     height: 128
@@ -237,8 +263,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: PenguinCondition
-    x: 0
-    y: 252
+    x: 513
+    y: 765
     width: 255
     height: 128
     borderLeft: 0
@@ -250,8 +276,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: RabbitCondition
-    x: 0
-    y: 123
+    x: 513
+    y: 636
     width: 255
     height: 128
     borderLeft: 0
@@ -280,6 +306,19 @@ MonoBehaviour:
     y: 1023
     width: 512
     height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Verification
+    x: 1539
+    y: 1279
+    width: 256
+    height: 256
     borderLeft: 0
     borderRight: 0
     borderTop: 0
