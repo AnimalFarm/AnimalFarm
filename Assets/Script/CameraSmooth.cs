@@ -20,6 +20,7 @@ public class CameraSmooth : MonoBehaviour
 
     void Awake()
     {
+        target = rabbit;
         switch (CharacterChoice.PLAYER_CHOICE)
         {
             case 1:

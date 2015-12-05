@@ -9,7 +9,8 @@ public class Eenemymove : MonoBehaviour
     public float speed;             //Enemy의 스피드
     public Vector3 Vdir;            //EnemyCheking에서 Player의 위치값을 받아온다
     public float Hp;
-    public UISprite test;
+    public float Damage;
+    public UISprite Hpbar;
 
     float distancedir;              //Enemy와 player의 거리, 작아질수록 가까워진다
 
@@ -23,7 +24,7 @@ public class Eenemymove : MonoBehaviour
 
     void Awake()
     {
-        test.fillAmount = Hp;
+        Hpbar.fillAmount = Hp;
         
         
        // test.fillAmount -= Time.deltaTime * 0.1f;

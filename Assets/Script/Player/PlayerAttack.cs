@@ -6,10 +6,14 @@ public class PlayerAttack : MonoBehaviour {
     public bool bAttack = false;
     public float damig;
     public GameObject Sword;
+    public float Hp;
+    public UISprite Hpbar;
+
     float timer;
+
     void Awake()
     {
-        //Sword.GetComponent<BoxCollider>().enabled = false;
+        Hpbar.fillAmount = Hp;
     }
 	void Update () {
         if (bAttack)

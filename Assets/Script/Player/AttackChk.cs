@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AttackChk : MonoBehaviour {
 
-    public GameObject GameObject;    //이승환//보스 오브잭트
+    public Boss GameObject;    //이승환//게임매니저 오브잭트
     public GameObject Player;   //이승환//플레이어 오브잭트
     
     GameObject Enemy;
@@ -12,27 +12,26 @@ public class AttackChk : MonoBehaviour {
 
     void Awake()
     {
+        PlayerDamage = Player.GetComponent<PlayerAttack>().damig;
+        Enemy = GameObject.bear;
+        BossHp = GameObject.bear.GetComponent<Eenemymove>().Hp;
         switch (ButtonEvent.BOSS)
         {
             case 1:
-                Enemy = GameObject.GetComponent<Boss>().bear;
-                BossHp = GameObject.GetComponent<Boss>().bear.GetComponent<Eenemymove>().Hp;
-                PlayerDamage = Player.GetComponent<PlayerAttack>().damig;
+                Enemy = GameObject.bear;
+                BossHp = GameObject.bear.GetComponent<Eenemymove>().Hp;
                 break;
             case 2:
-                Enemy = GameObject.GetComponent<Boss>().dog;
-                BossHp = GameObject.GetComponent<Boss>().dog.GetComponent<Eenemymove>().Hp;
-                PlayerDamage = Player.GetComponent<PlayerAttack>().damig;
+                Enemy = GameObject.dog;
+                BossHp = GameObject.dog.GetComponent<Eenemymove>().Hp;
                 break;
             case 3:
-                Enemy = GameObject.GetComponent<Boss>().rabbit;
-                BossHp = GameObject.GetComponent<Boss>().rabbit.GetComponent<Eenemymove>().Hp;
-                PlayerDamage = Player.GetComponent<PlayerAttack>().damig;
+                Enemy = GameObject.rabbit;
+                BossHp = GameObject.rabbit.GetComponent<Eenemymove>().Hp;
                 break;
             case 4:
-                Enemy = GameObject.GetComponent<Boss>().panda;
-                BossHp = GameObject.GetComponent<Boss>().panda.GetComponent<Eenemymove>().Hp;
-                PlayerDamage = Player.GetComponent<PlayerAttack>().damig;
+                Enemy = GameObject.panda;
+                BossHp = GameObject.panda.GetComponent<Eenemymove>().Hp;
                 break;
         }     
     }
@@ -47,7 +46,7 @@ public class AttackChk : MonoBehaviour {
         {
             if (timer > 0.5f)
             {
-                Enemy.GetComponent<Eenemymove>().test.fillAmount -= PlayerDamage / BossHp;
+                Enemy.GetComponent<Eenemymove>().Hpbar.fillAmount -= PlayerDamage / BossHp;
                 Enemy.GetComponent<Eenemymove>().Hp -= PlayerDamage;
                 timer = 0;
             }
