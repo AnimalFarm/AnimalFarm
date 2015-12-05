@@ -1379,7 +1379,7 @@ Transform:
   m_Children:
   - {fileID: 1271085647}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1001 &298582899
 Prefab:
   m_ObjectHideFlags: 0
@@ -2340,6 +2340,7 @@ MonoBehaviour:
   user_panda: {fileID: 755897761}
   user_dog: {fileID: 1274211606}
   user_penguin: {fileID: 588881490}
+  PlayerHpBar: {fileID: 1862396434}
 --- !u!4 &503403116 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: bc1b2d69354e14ba4b4ade8665f93081, type: 2}
@@ -7440,7 +7441,7 @@ Transform:
   - {fileID: 1890448396}
   - {fileID: 1100681903}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1001 &1344043639
 Prefab:
   m_ObjectHideFlags: 0
