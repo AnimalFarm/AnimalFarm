@@ -149,7 +149,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/OHJinSu/Desktop/new/AnimalFarm/Assets/Keystore/kr_pcu_nsh.keystore
+  AndroidKeystoreName: C:/Users/OHJinSu/Desktop/AnimalFarm/Assets/Keystore/kr_pcu_nsh.keystore
   AndroidKeyaliasName: kr_pcu_nsh
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
