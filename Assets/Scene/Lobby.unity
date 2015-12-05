@@ -1009,7 +1009,15 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 1676424619}
+    mMethodName: Identity
+    mParameters:
+    - obj: {fileID: 2042531712}
+      field: 
+    - obj: {fileID: 821687584}
+      field: 
+    oneShot: 0
 --- !u!61 &91293726
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5499,7 +5507,7 @@ Transform:
   m_GameObject: {fileID: 507309879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00277777785, y: .00277777808, z: .00277777785}
+  m_LocalScale: {x: .00277777785, y: .00277695921, z: .00277777785}
   m_Children:
   - {fileID: 1568314415}
   m_Father: {fileID: 0}
@@ -5968,10 +5976,12 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
   onClick:
-  - mTarget: {fileID: 1676424613}
+  - mTarget: {fileID: 1676424619}
     mMethodName: Identity
     mParameters:
     - obj: {fileID: 230505986}
+      field: 
+    - obj: {fileID: 1226611195}
       field: 
     oneShot: 0
 --- !u!1 &548903125
@@ -19090,8 +19100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6e189f4d417bd4995fa5e147d92f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundPanel: {fileID: 893740782}
   loadingPanel: {fileID: 1585622137}
+  characterPopUp: {fileID: 412282933}
+  gameStartPopUp: {fileID: 893740782}
   yesOrno: {fileID: 821687584}
   yesOrnoMessage: {fileID: 2042531712}
   loadingBear: {fileID: 754540382}

@@ -128,21 +128,4 @@ public class LobbyButton : MonoBehaviour
     {
         ui_ShopPanel.SetDragAmount(0, 0, false);
     }
-    public void Identity(UILabel message)
-    {
-        switch(message.text)
-        {
-            case "게임을 정말 종료 하시겠습니까?":
-                Application.Quit();
-                break;
-            case "캐릭터 메뉴에서 캐릭터를 선택하세요.":
-                characterPopUp.SetActive(true);
-                break;
-        }
-        
-    }
-    void OnApplicationQuit()
-    {
-        GPGSMng.GetInstance.LogoutGPGS(); //노승현, 로그아웃
-    }
 }

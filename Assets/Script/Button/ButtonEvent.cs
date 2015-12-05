@@ -5,24 +5,48 @@ using System.Collections;
 
 public class ButtonEvent : MonoBehaviour {
 
-    public GameObject roundPanel,loadingPanel;
+    public GameObject loadingPanel, characterPopUp, gameStartPopUp; // 각 버튼의 팝업;
     public GameObject yesOrno; // 예아니요 팝업
     public UILabel yesOrnoMessage;
     public GameObject loadingBear, loadingRabbit, loadingPanda, loadingDog; // 각각의 라운드별 로딩창
     public enum boss { bear = 1, dog, rabbit, panda};
     public static int BOSS;
+    string roundName = null;
 
-    public void GameStart(GameObject g)
+    public void GameStart(GameObject round)
     {
-        roundPanel.SetActive(true);
+        yesOrno.SetActive(true);
         if (CharacterChoice.PLAYER_CHOICE == 0)
         {
-            yesOrno.SetActive(true);
             yesOrnoMessage.text = "캐릭터 메뉴에서 캐릭터를 선택하세요.";
-            return;
         }
+        else
+        {
+            roundName = round.name;
+            yesOrnoMessage.text = "게임을 시작하시겠습니까?";
+        }
+    }
+    public void Identity(UILabel message, GameObject obj)
+    {
+        switch (message.text)
+        {
+            case "게임을 정말 종료 하시겠습니까?":
+                Application.Quit();
+                break;
+            case "캐릭터 메뉴에서 캐릭터를 선택하세요.":
+                gameStartPopUp.SetActive(false);
+                characterPopUp.SetActive(true);
+                break;
+            case "게임을 시작하시겠습니까?":
+                RoundChoice(roundName);
+                break;
+        }
+        obj.SetActive(false);
+    }
+    public void RoundChoice(string round)
+    {
         loadingPanel.SetActive(true);
-        switch(g.name)
+        switch (round)
         {
             case "Round":
                 loadingBear.SetActive(true);
@@ -47,5 +71,9 @@ public class ButtonEvent : MonoBehaviour {
     {
         yield return new WaitForSeconds(2);
         Application.LoadLevel("Field");
+    }
+    void OnApplicationQuit()
+    {
+        GPGSMng.GetInstance.LogoutGPGS(); //노승현, 로그아웃
     }
 }
