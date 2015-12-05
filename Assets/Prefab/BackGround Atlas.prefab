@@ -69,7 +69,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: BossHPBorder
     x: 513
-    y: 507
+    y: 250
     width: 254
     height: 128
     borderLeft: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: GameOver
     x: 513
-    y: 894
+    y: 637
     width: 256
     height: 128
     borderLeft: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Notice
     x: 1539
-    y: 1792
+    y: 1279
     width: 256
     height: 256
     borderLeft: 0
@@ -264,7 +264,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: PenguinCondition
     x: 513
-    y: 765
+    y: 508
     width: 255
     height: 128
     borderLeft: 0
@@ -277,7 +277,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: RabbitCondition
     x: 513
-    y: 636
+    y: 379
     width: 255
     height: 128
     borderLeft: 0
@@ -301,6 +301,19 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 1
     paddingBottom: 1
+  - name: SpeechBubble
+    x: 1539
+    y: 1792
+    width: 256
+    height: 256
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: startImage
     x: 1026
     y: 1023
@@ -315,8 +328,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Verification
-    x: 1539
-    y: 1279
+    x: 513
+    y: 766
     width: 256
     height: 256
     borderLeft: 0
