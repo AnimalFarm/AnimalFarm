@@ -13,12 +13,29 @@ public class playerMove : MonoBehaviour
         //이승환//이동하면 에니메이션 실행
         if (stick.position.x > stick.radius - 20 || stick.position.x < -stick.radius + 20 || stick.position.y > stick.radius - 20 || stick.position.y < -stick.radius + 20)
         {
-            if (speed < 0.1f) { 
-                _Player.SetBool("bWalk", true); 
+            if (_Player.name == "animal_ch_rabbit_01")
+            {
+                if (speed < 0.1f)
+                {
+                    _Player.SetBool("bWalk", true);
+                }
+                if (speed < 0.2f)
+                {
+                    speed += 0.2f * Time.deltaTime;
+                }
             }
-            if (speed < 0.13f) {
-                speed += 0.05f * Time.deltaTime; 
+            else
+            {
+                if (speed < 0.1f)
+                {
+                    _Player.SetBool("bWalk", true);
+                }
+                if (speed < 0.13f)
+                {
+                    speed += 0.05f * Time.deltaTime;
+                }
             }
+            
         }
         else
         {
@@ -26,12 +43,23 @@ public class playerMove : MonoBehaviour
             _Player.SetBool("bWalk", false);
             _Player.SetBool("bRun", false);
         }
-
-        if (speed >= 0.1f && speed < 0.13f )
+        if (_Player.name == "animal_ch_rabbit_01")
         {
-            _Player.SetBool("bRun", true);
-            _Player.SetBool("bWalk", false);
-            speed += 0.05f * Time.deltaTime;
+            if (speed >= 0.1f && speed < 0.2f)
+            {
+                _Player.SetBool("bRun", true);
+                _Player.SetBool("bWalk", false);
+                speed += 0.05f * Time.deltaTime;
+            }
+        }
+        else
+        {
+            if (speed >= 0.1f && speed < 0.13f)
+            {
+                _Player.SetBool("bRun", true);
+                _Player.SetBool("bWalk", false);
+                speed += 0.05f * Time.deltaTime;
+            }
         }
 	}
 }

@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour {
     private int _secText;           //이승환//초
     private int _minText;           //이승환//분
     public UILabel time;            //이승환//시간을 표시해줄 UI라밸
-
+    
 	void Update () {
 
         _timerForText += Time.deltaTime;

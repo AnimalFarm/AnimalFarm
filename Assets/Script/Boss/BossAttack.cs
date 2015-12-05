@@ -48,7 +48,7 @@ public class BossAttack : MonoBehaviour {
     }
     void OnTriggerEnter(Collider order)//이승환//오브젝트와 콜리더가 처음 충돌했을 때 한번 한번호출
     {
-        if (order.tag == "Player" && order.tag != "Enemy")
+        if (order.tag == "Player" && order.tag != "Enemy" && Boss.GetComponent<Eenemymove>().attackOn == true)
         {
             if (timer > 0.5f)
             {
