@@ -25,6 +25,7 @@ public class Eenemymove : MonoBehaviour
     {
         test.fillAmount = Hp;
         
+        
        // test.fillAmount -= Time.deltaTime * 0.1f;
     }
 
@@ -57,7 +58,7 @@ public class Eenemymove : MonoBehaviour
                 // any.CrossFade("2_run", 0.25f);
                 speed = 2f; 
             }
-            else if (distancedir >1.5f)//이승환//가까운 속도
+            else if (distancedir >2f)//이승환//가까운 속도
             {
                 animator.SetBool("bWalk", true);
                 animator.SetBool("bRun", false);

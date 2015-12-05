@@ -41,6 +41,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: f181db7336a652444ad37cc36f1df124, type: 2}
   mSprites:
+  - name: BearCondition
+    x: 257
+    y: 381
+    width: 255
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BossHPBar
+    x: 1539
+    y: 1791
+    width: 256
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BossHPBorder
+    x: 1539
+    y: 1407
+    width: 254
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CharacterHP
+    x: 1539
+    y: 1920
+    width: 256
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: developer
     x: 0
     y: 1536
@@ -54,9 +106,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: DogCondition
+    x: 256
+    y: 252
+    width: 255
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
   - name: GameClear
     x: 1539
-    y: 1920
+    y: 1662
     width: 256
     height: 128
     borderLeft: 0
@@ -68,8 +133,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: GameOver
-    x: 1539
-    y: 1791
+    x: 0
+    y: 381
     width: 256
     height: 128
     borderLeft: 0
@@ -156,6 +221,45 @@ MonoBehaviour:
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PandaCondition
+    x: 256
+    y: 123
+    width: 255
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PenguinCondition
+    x: 0
+    y: 252
+    width: 255
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RabbitCondition
+    x: 0
+    y: 123
+    width: 255
+    height: 128
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
     paddingTop: 0
     paddingBottom: 0
   - name: ResetButton

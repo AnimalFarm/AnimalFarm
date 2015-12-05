@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerAttack : MonoBehaviour {
     public Animator _Playre;
     public bool bAttack = false;
-    public float damig =10;
+    public float damig;
     public GameObject Sword;
     float timer;
     void Awake()
@@ -15,15 +15,20 @@ public class PlayerAttack : MonoBehaviour {
         if (bAttack)
         {
             timer += Time.deltaTime;
-            if (timer > 0.25f)
+            if (timer > 0.3f)
             {
                 Sword.GetComponent<BoxCollider>().enabled = true;
                 _Playre.ResetTrigger("bAttack_01");
-                timer = 0f;
-                bAttack = false;
             }
-           
+            if(timer > 0.5f)
+            {
+                bAttack = false;
+                timer = 0f;
+            }
+
         }
+        else { Sword.GetComponent<BoxCollider>().enabled = false; bAttack = false; }
+       
        
 	}
 

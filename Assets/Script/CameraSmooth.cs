@@ -3,7 +3,10 @@ using System.Collections;
 
 public class CameraSmooth : MonoBehaviour
 {
-    public Transform target = null;
+    public Transform Bear, rabbit, panda, dog, penguin;
+    
+    Transform target = null;
+
 
     public float distance = 10.0f;
     public float minHeight = 5.0f;
@@ -14,6 +17,28 @@ public class CameraSmooth : MonoBehaviour
     public float rotationDamping = 3.0f;
     public float rotationFactor = 1;
     public float zoomFactor = 1;
+
+    void Awake()
+    {
+        switch (CharacterChoice.PLAYER_CHOICE)
+        {
+            case 1:
+                target = Bear;
+                break;
+            case 2:
+                target = dog;
+                break;
+            case 3:
+                target = panda;
+                break;
+            case 4:
+                target = penguin;
+                break;
+            case 5:
+                target = rabbit;
+                break;
+        }
+    }
 
     void Update()
     {

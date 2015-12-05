@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerCharacter : MonoBehaviour {
 
     public GameObject user_Bear, user_rabbit, user_panda, user_dog, user_penguin;
+
     
     void Awake()
     {
