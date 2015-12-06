@@ -36,7 +36,6 @@ public class UIJoystick : MonoBehaviour
     public float doubleTapTimeWindow = 0.5f;				// time in Seconds to recognize a double tab
     public GameObject doubleTapMessageTarget;
     public string doubleTabMethodeName;
-    Vector3 a;
 
     void Awake()
     {

@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: f181db7336a652444ad37cc36f1df124, type: 2}
   mSprites:
   - name: BearCondition
-    x: 257
-    y: 381
+    x: 0
+    y: 1403
     width: 255
     height: 128
     borderLeft: 0
@@ -54,9 +54,22 @@ MonoBehaviour:
     paddingRight: 1
     paddingTop: 0
     paddingBottom: 0
+  - name: BearSkill
+    x: 1026
+    y: 3584
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: BossHPBar
     x: 1539
-    y: 1663
+    y: 3711
     width: 256
     height: 128
     borderLeft: 0
@@ -68,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BossHPBorder
-    x: 513
-    y: 250
+    x: 256
+    y: 1145
     width: 254
     height: 128
     borderLeft: 0
@@ -80,9 +93,22 @@ MonoBehaviour:
     paddingRight: 1
     paddingTop: 0
     paddingBottom: 0
+  - name: Buff
+    x: 513
+    y: 3584
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Cancellation
-    x: 0
-    y: 253
+    x: 1539
+    y: 3840
     width: 256
     height: 256
     borderLeft: 0
@@ -94,8 +120,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: CharacterHP
-    x: 0
-    y: 124
+    x: 1539
+    y: 3198
     width: 256
     height: 128
     borderLeft: 0
@@ -108,7 +134,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: developer
     x: 0
-    y: 1536
+    y: 2558
     width: 512
     height: 512
     borderLeft: 0
@@ -120,8 +146,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: DogCondition
-    x: 257
-    y: 252
+    x: 256
+    y: 1403
     width: 255
     height: 128
     borderLeft: 0
@@ -132,9 +158,22 @@ MonoBehaviour:
     paddingRight: 1
     paddingTop: 0
     paddingBottom: 0
+  - name: DogSkill
+    x: 0
+    y: 3584
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: GameClear
     x: 1539
-    y: 1150
+    y: 2685
     width: 256
     height: 128
     borderLeft: 0
@@ -146,8 +185,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: GameOver
-    x: 513
-    y: 637
+    x: 1539
+    y: 2172
     width: 256
     height: 128
     borderLeft: 0
@@ -160,7 +199,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Homebutton
     x: 1796
-    y: 1795
+    y: 3843
     width: 126
     height: 126
     borderLeft: 0
@@ -173,7 +212,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: Loading_A
     x: 513
-    y: 1536
+    y: 2558
     width: 512
     height: 512
     borderLeft: 0
@@ -186,7 +225,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Loading_B
     x: 1026
-    y: 1536
+    y: 2558
     width: 512
     height: 512
     borderLeft: 0
@@ -199,7 +238,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Loading_C
     x: 0
-    y: 1023
+    y: 2045
     width: 512
     height: 512
     borderLeft: 0
@@ -211,8 +250,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Loading_D
-    x: 0
-    y: 510
+    x: 513
+    y: 2045
     width: 512
     height: 512
     borderLeft: 0
@@ -224,8 +263,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: LobbyBG
-    x: 513
-    y: 1023
+    x: 1026
+    y: 2045
     width: 512
     height: 512
     borderLeft: 0
@@ -238,7 +277,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Notice
     x: 1539
-    y: 1279
+    y: 3327
     width: 256
     height: 256
     borderLeft: 0
@@ -250,8 +289,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: PandaCondition
-    x: 257
-    y: 123
+    x: 0
+    y: 1274
     width: 255
     height: 128
     borderLeft: 0
@@ -260,11 +299,24 @@ MonoBehaviour:
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PandaSkill
+    x: 0
+    y: 3071
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: PenguinCondition
-    x: 513
-    y: 508
+    x: 256
+    y: 1274
     width: 255
     height: 128
     borderLeft: 0
@@ -275,9 +327,22 @@ MonoBehaviour:
     paddingRight: 1
     paddingTop: 0
     paddingBottom: 0
+  - name: PenguinSkill
+    x: 1026
+    y: 3071
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: RabbitCondition
-    x: 513
-    y: 379
+    x: 0
+    y: 1145
     width: 255
     height: 128
     borderLeft: 0
@@ -286,11 +351,24 @@ MonoBehaviour:
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RabbitSkill
+    x: 513
+    y: 3071
+    width: 512
+    height: 512
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: ResetButton
     x: 1796
-    y: 1922
+    y: 3970
     width: 127
     height: 126
     borderLeft: 0
@@ -303,7 +381,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: SpeechBubble
     x: 1539
-    y: 1792
+    y: 2814
     width: 256
     height: 256
     borderLeft: 0
@@ -315,8 +393,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: startImage
-    x: 1026
-    y: 1023
+    x: 0
+    y: 1532
     width: 512
     height: 512
     borderLeft: 0
@@ -328,8 +406,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Verification
-    x: 513
-    y: 766
+    x: 1539
+    y: 2301
     width: 256
     height: 256
     borderLeft: 0

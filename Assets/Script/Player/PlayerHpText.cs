@@ -5,7 +5,7 @@ public class PlayerHpText : MonoBehaviour {
 
     public UILabel HpText;
     public PlayerCharacter Player;
-    float PlayerHp;
+
 
 	// Use this for initialization
     void Awake()

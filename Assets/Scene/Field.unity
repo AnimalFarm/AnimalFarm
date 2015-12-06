@@ -1290,11 +1290,11 @@ Transform:
   m_GameObject: {fileID: 288937353}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30, y: 30, z: 0}
-  m_LocalScale: {x: .00277777785, y: .00219421112, z: .00277777785}
+  m_LocalScale: {x: .00277777785, y: .00189899001, z: .00277777785}
   m_Children:
   - {fileID: 1271085647}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1001 &298582899
 Prefab:
   m_ObjectHideFlags: 0
@@ -1572,7 +1572,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &328226489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,6 +1932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameObject: {fileID: 488307971}
   Player: {fileID: 755897761}
+  AttackParticle: {fileID: 0}
 --- !u!65 &382093058
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2238,7 +2239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &488307973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2256,6 +2257,7 @@ MonoBehaviour:
   user_dog: {fileID: 1274211606}
   user_penguin: {fileID: 588881490}
   PlayerHpBar: {fileID: 1862396434}
+  playerSkill: {fileID: 1281602343}
 --- !u!4 &503403116 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: bc1b2d69354e14ba4b4ade8665f93081, type: 2}
@@ -2581,7 +2583,7 @@ MonoBehaviour:
   bAttack: 0
   damig: 100
   Sword: {fileID: 2022897986}
-  Hp: 0
+  Hp: 1000
   Hpbar: {fileID: 26325425}
 --- !u!114 &588881492
 MonoBehaviour:
@@ -3234,8 +3236,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
-  mSpriteName: glossy_lightgray_button_Vector_Clipart
+  mAtlas: {fileID: 11411754, guid: 034e6d90c59a86d4b83e91bd7de8b294, type: 2}
+  mSpriteName: Buff
   mFillCenter: 1
 --- !u!114 &670648329
 MonoBehaviour:
@@ -3371,7 +3373,7 @@ Transform:
   - {fileID: 1418803773}
   - {fileID: 1586392452}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &698493628
 GameObject:
   m_ObjectHideFlags: 0
@@ -3917,7 +3919,7 @@ MonoBehaviour:
   bAttack: 0
   damig: 25
   Sword: {fileID: 382093055}
-  Hp: 0
+  Hp: 4000
   Hpbar: {fileID: 26325425}
 --- !u!114 &755897763
 MonoBehaviour:
@@ -4485,6 +4487,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba85346bdd3604c039d8f3d8c6d4d23a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &866812968 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+  m_PrefabInternal: {fileID: 1573968200}
 --- !u!4 &869265397 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 38ded33b5b74e440c8e316dabf68d9d0, type: 2}
@@ -4555,11 +4561,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cc: {fileID: 889863219}
   any: {fileID: 0}
-  Weapon: {fileID: 0}
   speed: 0
   Vdir: {x: 0, y: 0, z: 0}
   Hp: 4000
-  Damage: 0
+  Damage: 50
   Hpbar: {fileID: 246935607}
   animator: {fileID: 2116566330}
   attackOn: 0
@@ -4939,7 +4944,7 @@ Transform:
   - {fileID: 1237641156}
   - {fileID: 889863218}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &974321271 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: ba85346bdd3604c039d8f3d8c6d4d23a, type: 2}
@@ -4986,7 +4991,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cc: {fileID: 997975066}
   any: {fileID: 0}
-  Weapon: {fileID: 1837281066}
   speed: 0
   Vdir: {x: 0, y: 0, z: 0}
   Hp: 1000
@@ -5938,6 +5942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameObject: {fileID: 488307971}
   Player: {fileID: 1946986281}
+  AttackParticle: {fileID: 0}
 --- !u!65 &1102812241
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6755,11 +6760,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cc: {fileID: 1237641157}
   any: {fileID: 0}
-  Weapon: {fileID: 0}
   speed: 0
   Vdir: {x: 0, y: 0, z: 0}
   Hp: 2000
-  Damage: 0
+  Damage: 50
   Hpbar: {fileID: 246935607}
   animator: {fileID: 1897436183}
   attackOn: 0
@@ -7039,7 +7043,7 @@ MonoBehaviour:
   bAttack: 0
   damig: 25
   Sword: {fileID: 1695947770}
-  Hp: 0
+  Hp: 1000
   Hpbar: {fileID: 26325425}
 --- !u!143 &1274211609
 CharacterController:
@@ -7148,8 +7152,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
-  mSpriteName: glossy_lightgray_button_Vector_Clipart
+  mAtlas: {fileID: 11411754, guid: 034e6d90c59a86d4b83e91bd7de8b294, type: 2}
+  mSpriteName: RabbitSkill
   mFillCenter: 1
 --- !u!114 &1281602344
 MonoBehaviour:
@@ -7530,7 +7534,7 @@ Transform:
   - {fileID: 1890448396}
   - {fileID: 1100681903}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1001 &1344043639
 Prefab:
   m_ObjectHideFlags: 0
@@ -8475,6 +8479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameObject: {fileID: 488307971}
   Player: {fileID: 615754784}
+  AttackParticle: {fileID: 866812968}
 --- !u!4 &1555881726 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400008, guid: fdbaa40b70c91074e9285acb7841a10b, type: 3}
@@ -8545,6 +8550,64 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1570672486}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1573968200
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 26.4899998
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_Range
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1576393429
 GameObject:
   m_ObjectHideFlags: 0
@@ -8712,11 +8775,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cc: {fileID: 1598481404}
   any: {fileID: 0}
-  Weapon: {fileID: 0}
   speed: 0
   Vdir: {x: 0, y: 0, z: 0}
   Hp: 2000
-  Damage: 0
+  Damage: 25
   Hpbar: {fileID: 246935607}
   animator: {fileID: 1959026514}
   attackOn: 0
@@ -9285,6 +9347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameObject: {fileID: 488307971}
   Player: {fileID: 1274211606}
+  AttackParticle: {fileID: 0}
 --- !u!65 &1695947773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11273,7 +11336,7 @@ MonoBehaviour:
   bAttack: 0
   damig: 50
   Sword: {fileID: 1102812238}
-  Hp: 0
+  Hp: 2000
   Hpbar: {fileID: 26325425}
 --- !u!114 &1946986283
 MonoBehaviour:
@@ -11902,6 +11965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameObject: {fileID: 488307971}
   Player: {fileID: 588881490}
+  AttackParticle: {fileID: 0}
 --- !u!65 &2022897989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12475,7 +12539,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &2132211112 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: b97f268fc389242838adf2960c6f49ce, type: 2}
