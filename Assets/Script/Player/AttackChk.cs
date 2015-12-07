@@ -5,11 +5,11 @@ public class AttackChk : MonoBehaviour {
 
     public Boss GameObject;    //이승환//게임매니저 오브잭트
     public GameObject Player;   //이승환//플레이어 오브잭트
-    public GameObject AttackParticle;
 
     GameObject Enemy;
-    float timer=0;
+    float timer=0f,skilltimer=0f;
     float BossHp,PlayerDamage;
+    bool bskill;
 
     void Awake()
     {
@@ -38,6 +38,18 @@ public class AttackChk : MonoBehaviour {
     }
     void Update()
     {
+        
+        if (Player.GetComponent<PlayerSkill>().rabbitskill == true )
+        {
+            bskill = true;
+            skilltimer += Time.deltaTime;
+            if (skilltimer > 1f)
+            {
+                Enemy.GetComponent<Eenemymove>().Hpbar.fillAmount -= PlayerDamage / BossHp;
+                Enemy.GetComponent<Eenemymove>().Hp -= PlayerDamage;
+                skilltimer = 0f;
+            }
+        }
         timer += Time.deltaTime;
        // Player.GetComponent<BoxCollider>().enabled = false;
     }
@@ -45,8 +57,6 @@ public class AttackChk : MonoBehaviour {
      {
          if (order.tag == "Enemy" && order.tag != "Player")
         {
-            AttackParticle.SetActive(true);
-            AttackParticle.transform.position = order.transform.position;
             if (timer > 0.5f)
             {
                 Enemy.GetComponent<Eenemymove>().Hpbar.fillAmount -= PlayerDamage / BossHp;
@@ -56,13 +66,5 @@ public class AttackChk : MonoBehaviour {
             }
         } 
      }
-    //void OnCollisionEnter(Collision order)
-    // {
-    //     if (other.transform.tag == "Enemy")
-    //     {
-    //         AttackParticle.SetActive(true);
-    //         AttackParticle.transform.position = other.transform.position;
-    //     }
-    // }
 }
 

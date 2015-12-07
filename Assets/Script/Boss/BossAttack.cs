@@ -43,22 +43,21 @@ public class BossAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        timer += Time.deltaTime;
+        //timer += Time.deltaTime;
         // Player.GetComponent<BoxCollider>().enabled = false;
     }
     void OnTriggerEnter(Collider order)//이승환//오브젝트와 콜리더가 처음 충돌했을 때 한번 한번호출
     {
-        if (order.tag == "Player" && order.tag != "Enemy" && Boss.GetComponent<Eenemymove>().attackOn == true)
+        if (order.tag == "Player" && Boss.GetComponent<Eenemymove>().attackOn == true)
         {
-            if (timer > 0.5f)
-            {
+           // if (timer > 0.5f)
+           // {
                 Player.GetComponent<PlayerAttack>().Hpbar.fillAmount -= BossDamage / PlayerHp;
                 Player.GetComponent<PlayerAttack>().Hp -= BossDamage;
-                timer = 0;
-                Debug.Log(BossDamage);
-            }
+               // timer = 0;
+               // Debug.Log(BossDamage);
+            //}
         }
     }
-
 }
 

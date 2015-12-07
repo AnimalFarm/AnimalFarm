@@ -13,11 +13,12 @@ public class LobbyButton : MonoBehaviour
     public UIGrid characterGrid, shop_CharacterGrid; // 그리드
     public GameObject character_3D;
     public UILabel yesOrnoMessage;
+    public GameObject character;
     
     void Update()
     {
         //노승현, 로비 패널이 꺼져있다면
-        if (!lobbyPanel.isActiveAndEnabled)
+        if (!lobbyPanel.isActiveAndEnabled) 
             return;
 
         //노승현,3D 모델링이 보이면 안되는 상황

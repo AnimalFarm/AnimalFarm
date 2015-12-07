@@ -4,6 +4,8 @@ using System.Collections;
 public class Eenemymove : MonoBehaviour
 {
 
+    public GameObject gamemanage;
+    public GameObject player;
     public CharacterController cc;  //Enemy의 컨트롤러를 받아 이동
     public Animation any;           //Enemy의 에니메이션
     public float speed;             //Enemy의 스피드
@@ -34,6 +36,7 @@ public class Eenemymove : MonoBehaviour
     {
         if (attackOn)//이승환//어택 에니매이션 실행 함수
         {
+            gamemanage.transform.LookAt(player.transform);
             distancedir = Vector3.Distance(Vdir, transform.position);
             animator.SetBool("bAttack_01", true);
             animator.SetBool("bWalk", false);

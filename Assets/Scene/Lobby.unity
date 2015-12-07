@@ -505,7 +505,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
-  mText: New Label
+  mText: "\uD32C\uB354"
   mFontSize: 20
   mFontStyle: 1
   mAlignment: 0
@@ -1409,7 +1409,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
-  mText: New Label
+  mText: "\uD1A0\uB07C"
   mFontSize: 20
   mFontStyle: 1
   mAlignment: 0
@@ -1923,7 +1923,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
-  mText: New Label
+  mText: "\uD33D\uADC4"
   mFontSize: 20
   mFontStyle: 1
   mAlignment: 0
@@ -2282,7 +2282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &218728761
 Transform:
   m_ObjectHideFlags: 0
@@ -4539,7 +4539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &387291050
 Transform:
   m_ObjectHideFlags: 0
@@ -5546,7 +5546,7 @@ Transform:
   m_GameObject: {fileID: 507309879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00277777785, y: .00277695921, z: .00277777785}
+  m_LocalScale: {x: .00277777785, y: .00277777785, z: .00277777785}
   m_Children:
   - {fileID: 1568314415}
   m_Father: {fileID: 0}
@@ -7921,7 +7921,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
-  mText: New Label
+  mText: "\uAC1C"
   mFontSize: 20
   mFontStyle: 1
   mAlignment: 0
@@ -9531,8 +9531,8 @@ MonoBehaviour:
   aspectRatio: 1.48672569
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: New Label
+  mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
+  mText: "\uD32C\uB354"
   mFontSize: 20
   mFontStyle: 1
   mAlignment: 0
@@ -9543,7 +9543,7 @@ MonoBehaviour:
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 0
-  mMaterial: {fileID: 0}
+  mMaterial: {fileID: 2100000, guid: 4d02925111c6422408ca333657262a28, type: 3}
   mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 1, g: 1, b: 1, a: 1}
@@ -11605,7 +11605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1075002084
 Transform:
   m_ObjectHideFlags: 0
@@ -12404,7 +12404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1106710759
 Transform:
   m_ObjectHideFlags: 0
@@ -12772,7 +12772,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 141822, guid: 175173a698d121b41a215b8d5bc8ac99, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 464412, guid: 175173a698d121b41a215b8d5bc8ac99, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 464412, guid: 175173a698d121b41a215b8d5bc8ac99, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 464412, guid: 175173a698d121b41a215b8d5bc8ac99, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.79999995
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6400216, guid: 175173a698d121b41a215b8d5bc8ac99, type: 2}
@@ -14772,7 +14784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1238594788
 Transform:
   m_ObjectHideFlags: 0
@@ -16907,7 +16919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1415099325
 Transform:
   m_ObjectHideFlags: 0
@@ -18746,7 +18758,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
-  mSpriteName: Rabbit
+  mSpriteName: Bear
   mFillCenter: 1
 --- !u!1 &1629338304
 GameObject:
@@ -19128,6 +19140,7 @@ MonoBehaviour:
   shop_CharacterGrid: {fileID: 1711740056}
   character_3D: {fileID: 959677127}
   yesOrnoMessage: {fileID: 2042531712}
+  character: {fileID: 959677127}
 --- !u!114 &1676424614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19431,7 +19444,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11466788, guid: 4eaf316fc4f0f1544bf8c3ab9d00c8f3, type: 2}
-  mSpriteName: RabbitBG
+  mSpriteName: BearBG
   mFillCenter: 1
 --- !u!1 &1693652344
 GameObject:
@@ -19924,8 +19937,8 @@ MonoBehaviour:
   aspectRatio: 1.48672569
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: New Label
+  mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
+  mText: "\uD33D\uADC4"
   mFontSize: 20
   mFontStyle: 1
   mAlignment: 0
@@ -19936,7 +19949,7 @@ MonoBehaviour:
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 0
-  mMaterial: {fileID: 0}
+  mMaterial: {fileID: 2100000, guid: 4d02925111c6422408ca333657262a28, type: 3}
   mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 1, g: 1, b: 1, a: 1}
@@ -20272,8 +20285,8 @@ MonoBehaviour:
   aspectRatio: 1.48672569
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: New Label
+  mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
+  mText: "\uACF0"
   mFontSize: 20
   mFontStyle: 1
   mAlignment: 0
@@ -20284,7 +20297,7 @@ MonoBehaviour:
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 0
-  mMaterial: {fileID: 0}
+  mMaterial: {fileID: 2100000, guid: 4d02925111c6422408ca333657262a28, type: 3}
   mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 1, g: 1, b: 1, a: 1}
@@ -20965,7 +20978,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
-  mText: New Label
+  mText: "\uACF0"
   mFontSize: 20
   mFontStyle: 1
   mAlignment: 0
@@ -21954,8 +21967,8 @@ MonoBehaviour:
   aspectRatio: 1.48672569
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: New Label
+  mFont: {fileID: 11421410, guid: 72728254d1953a74ea0b71ea989c310e, type: 2}
+  mText: "\uAC1C"
   mFontSize: 20
   mFontStyle: 1
   mAlignment: 0
@@ -21966,7 +21979,7 @@ MonoBehaviour:
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 0
-  mMaterial: {fileID: 0}
+  mMaterial: {fileID: 2100000, guid: 4d02925111c6422408ca333657262a28, type: 3}
   mApplyGradient: 1
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: 1, g: 1, b: 1, a: 1}
@@ -22406,7 +22419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1972573050
 Transform:
   m_ObjectHideFlags: 0
@@ -22467,7 +22480,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 0
   renderQueue: 0
-  startingRenderQueue: 3000
+  startingRenderQueue: 3001
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -22591,7 +22604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1981591441
 Transform:
   m_ObjectHideFlags: 0
@@ -22599,7 +22612,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1981591440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1040, y: -0, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1971620438}
@@ -22621,7 +22634,7 @@ MonoBehaviour:
   activeSprite: {fileID: 1238409675}
   activeAnimation: {fileID: 0}
   animator: {fileID: 0}
-  startsActive: 0
+  startsActive: 1
   instantTween: 0
   optionCanBeNone: 0
   onChange: []

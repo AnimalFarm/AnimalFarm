@@ -2,7 +2,10 @@
 using System.Collections;
 
 public class PlayerAttack : MonoBehaviour {
+
+    public GameObject gameManage;
     public Animator _Playre;
+    public GameObject playerLookat;
     public bool bAttack = false;
     public float damig;
     public GameObject Sword;
@@ -38,6 +41,7 @@ public class PlayerAttack : MonoBehaviour {
 
     public void Attack_()
     {
+        //playerLookat.transform.LookAt(gameManage.GetComponent<Boss>().bear.transform);
         Sword.GetComponent<BoxCollider>().enabled = false; 
         _Playre.SetTrigger("bAttack_01");
         bAttack = true;

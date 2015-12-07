@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Boss : MonoBehaviour {
     public GameObject bear, rabbit, panda, dog;
-    
+    public GameObject gameState, gameeEnd;
 
     void Awake () 
     {
@@ -12,7 +12,12 @@ public class Boss : MonoBehaviour {
 	
 	void Update () 
     {
-
+        if(bear.GetComponent<Eenemymove>().Hp <=0)
+        {
+            bear.SetActive(false);
+            gameState.SetActive(false);
+            gameeEnd.SetActive(true);
+        }
 	}
 
     public void CreateBoss()
@@ -32,5 +37,11 @@ public class Boss : MonoBehaviour {
                 panda.SetActive(true);
                 break;
         }     
+    }
+
+    public void LobbyScene()
+    {
+        Application.LoadLevel("Lobby");
+        SetShop.gold += 100;
     }
 }

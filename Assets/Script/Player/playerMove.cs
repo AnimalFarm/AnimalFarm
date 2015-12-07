@@ -3,13 +3,15 @@ using System.Collections;
 //이승환//조이스틱으로 플래이어 이동
 public class playerMove : MonoBehaviour
 {
+    public CharacterController cc;
     public UIJoystick stick;    //이승환//조이스텍스크립트를 가지고있는 플렌
     public Animator _Player;    //이승환//player 에니메이션
     public float speed = 0f;    //이승환//player 스피드
 
 	void Update ()
     {
-        transform.Translate((stick.position.x * Time.deltaTime * speed), 0f, (stick.position.y * Time.deltaTime * speed));//이승환//이동
+        cc.Move(new Vector3((stick.position.x * Time.deltaTime * speed), 0f, (stick.position.y * Time.deltaTime * speed)));
+        //transform.Translate((stick.position.x * Time.deltaTime * speed), 0f, (stick.position.y * Time.deltaTime * speed));//이승환//이동
         //이승환//이동하면 에니메이션 실행
         if (stick.position.x > stick.radius - 20 || stick.position.x < -stick.radius + 20 || stick.position.y > stick.radius - 20 || stick.position.y < -stick.radius + 20)
         {
